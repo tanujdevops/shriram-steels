@@ -1,0 +1,35 @@
+{
+  "slug": "bright-round-bars",
+  "name": "Bright Round Bars",
+  "short_description": "High-precision bright round bars ideal for shafts, rods, and machining applications.",
+  "meta_description": "Premium bright round bars with exceptional surface finish. Wide range of sizes & grades. Get instant quotes from Shriram Steels.",
+  "grades": ["EN8", "EN19", "EN24", "C45", "40C8", "SS304", "SS316"],
+  "sizes": [
+    "8mm dia x 3m",
+    "12mm dia x 6m",
+    "25mm dia x 6m"
+  ],
+  "features": [
+    "Mirror bright finish",
+    "Excellent straightness",
+    "Consistent diameter",
+    "Ready for direct use"
+  ],
+  "specifications": {
+    "material": "Carbon Steel / Alloy Steel / Stainless Steel",
+    "surface": "Bright (Cold Drawn)",
+    "tolerance": "h9 / h11",
+    "certification": "Material Test Reports available"
+  },
+  "applications": [
+    "Shaft manufacturing",
+    "Hydraulic cylinders",
+    "Linear motion systems",
+    "Precision tooling"
+  ],
+  "spec_pdf": "/specs/bright-round-bars-specs.pdf",
+  "images": ["/products/bright-round-bars-1.jpg", "/products/bright-round-bars-2.jpg"],
+  "availability": "In Stock",
+  "min_order_qty": "500 KG",
+  "price": "Request Quote"
+}

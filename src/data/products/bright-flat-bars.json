@@ -1,0 +1,35 @@
+{
+  "slug": "bright-flat-bars",
+  "name": "Bright Flat Bars",
+  "short_description": "Precision bright flat bars with excellent surface finish for engineering applications.",
+  "meta_description": "High precision bright flat bars with superior surface finish. Multiple grades available. Get competitive quotes from Shriram Steels.",
+  "grades": ["EN8", "EN19", "C45", "SS304", "SS316"],
+  "sizes": [
+    "10mm x 25mm x 3m",
+    "15mm x 50mm x 6m",
+    "20mm x 75mm x 6m"
+  ],
+  "features": [
+    "Bright polished surface",
+    "High dimensional accuracy", 
+    "Ready for machining",
+    "Corrosion resistant grades available"
+  ],
+  "specifications": {
+    "material": "Carbon Steel / Stainless Steel",
+    "surface": "Bright (Cold Drawn)",
+    "tolerance": "±0.1mm",
+    "certification": "Material Test Reports available"
+  },
+  "applications": [
+    "Precision machining",
+    "Tool manufacturing",
+    "Aerospace components",
+    "Medical equipment"
+  ],
+  "spec_pdf": "/specs/bright-flat-bars-specs.pdf",
+  "images": ["/products/bright-flat-bars-1.jpg", "/products/bright-flat-bars-2.jpg"],
+  "availability": "In Stock",
+  "min_order_qty": "500 KG",
+  "price": "Request Quote"
+}

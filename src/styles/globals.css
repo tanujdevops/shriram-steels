@@ -1,0 +1,120 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    /* Shriram Steels Brand Colors */
+    /* Primary: Red (#D32F2F) */
+    /* Secondary: Dark Gray (#212121) */
+    /* Accent: Silver Gray (#B0B0B0) */
+    /* Background: Transparent to show gradient */
+    
+    --background: 0 0% 100%;                    /* White background */
+    --foreground: 0 0% 13%;                     /* Dark Gray (#212121) */
+    --card: 0 0% 100%;                          /* White */
+    --card-foreground: 0 0% 13%;                /* Dark Gray */
+    --popover: 0 0% 100%;                       /* White */
+    --popover-foreground: 0 0% 13%;             /* Dark Gray */
+    --primary: 0 73% 51%;                       /* Red (#D32F2F) */
+    --primary-foreground: 0 0% 100%;            /* White text on red */
+    --secondary: 0 0% 69%;                      /* Silver Gray (#B0B0B0) */
+    --secondary-foreground: 0 0% 13%;           /* Dark Gray text on silver */
+    --muted: 0 0% 96%;                          /* Light gray for muted areas */
+    --muted-foreground: 0 0% 45%;               /* Medium gray for muted text */
+    --accent: 0 0% 69%;                         /* Silver Gray (#B0B0B0) */
+    --accent-foreground: 0 0% 13%;              /* Dark Gray */
+    --destructive: 0 84.2% 60.2%;               /* Keep destructive as is */
+    --destructive-foreground: 0 0% 100%;        /* White */
+    --border: 0 0% 90%;                         /* Light border */
+    --input: 0 0% 90%;                          /* Light input background */
+    --ring: 0 73% 51%;                          /* Red focus ring */
+    --radius: 0.5rem;
+  }
+
+  .dark {
+    /* Dark theme using inverted Shriram Steels colors */
+    --background: 0 0% 13%;                     /* Dark Gray background */
+    --foreground: 0 0% 100%;                    /* White */
+    --card: 0 0% 16%;                           /* Slightly lighter than bg */
+    --card-foreground: 0 0% 100%;               /* White */
+    --popover: 0 0% 13%;                        /* Dark Gray */
+    --popover-foreground: 0 0% 100%;            /* White */
+    --primary: 0 73% 51%;                       /* Red (#D32F2F) - same in dark */
+    --primary-foreground: 0 0% 100%;            /* White text on red */
+    --secondary: 0 0% 20%;                      /* Darker secondary */
+    --secondary-foreground: 0 0% 100%;          /* White text */
+    --muted: 0 0% 18%;                          /* Muted dark areas */
+    --muted-foreground: 0 0% 69%;               /* Silver Gray for muted text */
+    --accent: 0 0% 20%;                         /* Dark accent */
+    --accent-foreground: 0 0% 100%;             /* White text */
+    --destructive: 0 62.8% 30.6%;               /* Darker destructive */
+    --destructive-foreground: 0 0% 100%;        /* White */
+    --border: 0 0% 25%;                         /* Dark border */
+    --input: 0 0% 25%;                          /* Dark input */
+    --ring: 0 73% 51%;                          /* Red focus ring */
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  
+  html {
+    background-image: url('/bg.png');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+  }
+  
+  body {
+    @apply text-foreground;
+    background: transparent !important;
+  }
+  
+  /* Add subtle overlay to ensure text readability */
+  html::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(255, 255, 255, 0.3);
+    z-index: -1;
+    pointer-events: none;
+  }
+  
+  /* Dark theme overlay */
+  .dark html::before {
+    background: rgba(33, 33, 33, 0.4);
+  }
+}
+
+/* Custom brand gradient for hero elements */
+@layer utilities {
+  .brand-gradient {
+    background: linear-gradient(135deg, hsl(0, 73%, 51%) 0%, hsl(0, 0%, 13%) 100%);
+  }
+  
+  .brand-text-gradient {
+    background: linear-gradient(135deg, hsl(0, 73%, 51%) 0%, hsl(0, 0%, 13%) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+  
+  /* Enhanced glass-morphism effect for cards on gradient background */
+  .glass-card {
+    background: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+  }
+  
+  .dark .glass-card {
+    background: rgba(33, 33, 33, 0.95);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+  }
+}
