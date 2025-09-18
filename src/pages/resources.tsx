@@ -175,7 +175,7 @@ export default function ResourcesPage() {
               {resources.map((resource, index) => {
                 const IconComponent = resource.icon;
                 return (
-                  <Card key={index} className="hover:shadow-lg transition-all duration-300">
+                  <Card key={index} className="glass-card">
                     <CardHeader>
                       <div className="flex items-start justify-between mb-2">
                         <div className="flex items-center">
@@ -239,7 +239,7 @@ export default function ResourcesPage() {
             </div>
 
             <div className="grid md:grid-cols-3 gap-6 max-w-4xl mx-auto">
-              <Card className="text-center">
+              <Card className="premium-card text-center">
                 <CardHeader>
                   <MessageCircle className="h-12 w-12 mx-auto text-primary mb-4" />
                   <CardTitle>Technical Consultation</CardTitle>
@@ -261,7 +261,7 @@ export default function ResourcesPage() {
                 </CardContent>
               </Card>
 
-              <Card className="text-center">
+              <Card className="premium-card text-center">
                 <CardHeader>
                   <FileText className="h-12 w-12 mx-auto text-primary mb-4" />
                   <CardTitle>Custom Documentation</CardTitle>
@@ -283,7 +283,7 @@ export default function ResourcesPage() {
                 </CardContent>
               </Card>
 
-              <Card className="text-center">
+              <Card className="premium-card text-center">
                 <CardHeader>
                   <Calculator className="h-12 w-12 mx-auto text-primary mb-4" />
                   <CardTitle>Material Calculator</CardTitle>

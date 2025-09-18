@@ -166,7 +166,7 @@ export default function AboutPage() {
             </div>
 
             <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
-              <Card className="text-center">
+              <Card className="glass-card text-center">
                 <CardHeader>
                   <Factory className="h-12 w-12 mx-auto text-primary mb-4" />
                   <CardTitle>Manufacturing</CardTitle>
@@ -178,7 +178,7 @@ export default function AboutPage() {
                 </CardContent>
               </Card>
 
-              <Card className="text-center">
+              <Card className="glass-card text-center">
                 <CardHeader>
                   <CheckCircle className="h-12 w-12 mx-auto text-primary mb-4" />
                   <CardTitle>Quality Control</CardTitle>
@@ -190,7 +190,7 @@ export default function AboutPage() {
                 </CardContent>
               </Card>
 
-              <Card className="text-center">
+              <Card className="glass-card text-center">
                 <CardHeader>
                   <Users className="h-12 w-12 mx-auto text-primary mb-4" />
                   <CardTitle>Expert Team</CardTitle>
@@ -202,7 +202,7 @@ export default function AboutPage() {
                 </CardContent>
               </Card>
 
-              <Card className="text-center">
+              <Card className="glass-card text-center">
                 <CardHeader>
                   <Target className="h-12 w-12 mx-auto text-primary mb-4" />
                   <CardTitle>Customer Focus</CardTitle>
@@ -228,7 +228,7 @@ export default function AboutPage() {
             </div>
 
             <div className="max-w-md mx-auto">
-              <Card className="text-center">
+              <Card className="premium-card text-center">
                 <CardHeader>
                   {/* TODO: Add actual leadership photos */}
                   <div className="w-24 h-24 bg-muted rounded-full mx-auto mb-4 flex items-center justify-center">
@@ -259,7 +259,7 @@ export default function AboutPage() {
             </div>
 
             <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
-              <Card>
+              <Card className="premium-card">
                 <CardHeader>
                   <CardTitle className="flex items-center">
                     <MapPin className="mr-2 h-5 w-5" />
@@ -286,7 +286,7 @@ export default function AboutPage() {
                 </CardContent>
               </Card>
 
-              <Card>
+              <Card className="premium-card">
                 <CardHeader>
                   <CardTitle className="flex items-center">
                     <Phone className="mr-2 h-5 w-5" />

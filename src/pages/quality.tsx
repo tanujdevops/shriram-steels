@@ -95,7 +95,7 @@ export default function QualityPage() {
             </div>
 
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-              <Card>
+              <Card className="glass-card">
                 <CardHeader className="text-center">
                   <FileCheck className="h-12 w-12 mx-auto text-primary mb-4" />
                   <CardTitle>Material Test Reports</CardTitle>
@@ -122,7 +122,7 @@ export default function QualityPage() {
                 </CardContent>
               </Card>
 
-              <Card>
+              <Card className="glass-card">
                 <CardHeader className="text-center">
                   <Microscope className="h-12 w-12 mx-auto text-primary mb-4" />
                   <CardTitle>Laboratory Testing</CardTitle>
@@ -149,7 +149,7 @@ export default function QualityPage() {
                 </CardContent>
               </Card>
 
-              <Card>
+              <Card className="glass-card">
                 <CardHeader className="text-center">
                   <Award className="h-12 w-12 mx-auto text-primary mb-4" />
                   <CardTitle>Standards Compliance</CardTitle>
@@ -244,7 +244,7 @@ export default function QualityPage() {
               <div>
                 <h2 className="text-3xl font-bold mb-6">Testing Capabilities</h2>
                 <div className="space-y-6">
-                  <Card>
+                  <Card className="glass-card">
                     <CardHeader>
                       <CardTitle className="text-lg">Chemical Analysis</CardTitle>
                     </CardHeader>
@@ -270,7 +270,7 @@ export default function QualityPage() {
                     </CardContent>
                   </Card>
 
-                  <Card>
+                  <Card className="glass-card">
                     <CardHeader>
                       <CardTitle className="text-lg">Mechanical Testing</CardTitle>
                     </CardHeader>
@@ -301,7 +301,7 @@ export default function QualityPage() {
               <div>
                 <h2 className="text-3xl font-bold mb-6">Quality Certifications</h2>
                 <div className="space-y-4">
-                  <Card>
+                  <Card className="premium-card">
                     <CardHeader>
                       <CardTitle className="text-lg flex items-center">
                         <Award className="mr-2 h-5 w-5 text-primary" />
@@ -334,7 +334,7 @@ export default function QualityPage() {
                     </CardContent>
                   </Card>
 
-                  <Card>
+                  <Card className="premium-card">
                     <CardHeader>
                       <CardTitle className="text-lg">Traceability</CardTitle>
                     </CardHeader>
@@ -379,7 +379,7 @@ export default function QualityPage() {
             </div>
 
             <div className="max-w-4xl mx-auto">
-              <Card>
+              <Card className="premium-card">
                 <CardHeader>
                   <CardTitle className="text-xl text-center">MTR Contents</CardTitle>
                   <CardDescription className="text-center">

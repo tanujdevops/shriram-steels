@@ -201,7 +201,7 @@ export default function HomePage() {
                 { name: 'Bright Square Bars', desc: 'Structural and decorative applications', slug: 'bright-square-bars' },
                 { name: 'Alloy Steel', desc: 'High-strength for critical components', slug: 'alloy-steel' }
               ].map((product) => (
-                <Card key={product.slug} className="hover:shadow-lg transition-shadow">
+                <Card key={product.slug} className="glass-card">
                   <CardHeader>
                     <CardTitle className="text-lg">{product.name}</CardTitle>
                     <CardDescription>{product.desc}</CardDescription>
@@ -232,7 +232,7 @@ export default function HomePage() {
               </p>
             </div>
             <div className="max-w-4xl mx-auto grid md:grid-cols-2 gap-8">
-              <Card className="glass-card">
+              <Card className="premium-card">
                 <CardHeader>
                   <CardTitle>Quick Quote via WhatsApp</CardTitle>
                   <CardDescription>
@@ -248,7 +248,7 @@ export default function HomePage() {
                   </Button>
                 </CardContent>
               </Card>
-              <Card className="glass-card">
+              <Card className="premium-card">
                 <CardHeader>
                   <CardTitle>Visit Our Facility</CardTitle>
                   <CardDescription>Located in Kolhapur&apos;s industrial hub</CardDescription>

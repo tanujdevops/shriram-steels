@@ -309,7 +309,7 @@ Please share your current rates and availability. Thank you!`;
           <div className="container mx-auto px-4">
             <div className="grid lg:grid-cols-3 gap-8">
               {/* Specifications */}
-              <Card>
+              <Card className="glass-card">
                 <CardHeader>
                   <CardTitle className="flex items-center">
                     <FileText className="mr-2 h-5 w-5" />
@@ -340,7 +340,7 @@ Please share your current rates and availability. Thank you!`;
               </Card>
 
               {/* Applications */}
-              <Card>
+              <Card className="glass-card">
                 <CardHeader>
                   <CardTitle className="flex items-center">
                     <Shield className="mr-2 h-5 w-5" />
@@ -360,7 +360,7 @@ Please share your current rates and availability. Thank you!`;
               </Card>
 
               {/* Available Sizes */}
-              <Card>
+              <Card className="glass-card">
                 <CardHeader>
                   <CardTitle className="flex items-center">
                     <Package className="mr-2 h-5 w-5" />
@@ -388,7 +388,7 @@ Please share your current rates and availability. Thank you!`;
         <section className="py-12 bg-muted/50">
           <div className="container mx-auto px-4">
             <div className="max-w-2xl mx-auto">
-              <Card>
+              <Card className="premium-card">
                 <CardHeader className="text-center">
                   <CardTitle className="text-2xl">Get Detailed Quote</CardTitle>
                   <CardDescription>

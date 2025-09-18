@@ -120,7 +120,7 @@ export default function ProductsPage({ products, allGrades }: ProductsPageProps)
             {/* Products Grid */}
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
               {filteredProducts.map((product) => (
-                <Card key={product.slug} className="hover:shadow-lg transition-all duration-300">
+                <Card key={product.slug} className="glass-card">
                   <CardHeader>
                     <div className="flex justify-between items-start mb-2">
                       <CardTitle className="text-xl">{product.name}</CardTitle>
