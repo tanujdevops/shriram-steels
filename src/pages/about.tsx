@@ -27,7 +27,8 @@ export default function AboutPage() {
         <title>About Shriram Steels - Steel Manufacturing Company in Kolhapur | Our Story</title>
         <meta name="description" content="Learn about Shriram Steels, a leading steel manufacturer in Kolhapur, Maharashtra. Decades of experience in producing quality steel bars and rods for industrial applications." />
         <meta name="keywords" content="about Shriram Steels, steel manufacturer Kolhapur, Maharashtra steel company, steel bars manufacturer, industrial steel supplier" />
-        <link rel="icon" href="/favicon-ss.ico" />
+        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" type="image/png" sizes="32x32" href="/shriram-steels.png" />
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{

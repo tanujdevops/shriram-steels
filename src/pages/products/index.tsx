@@ -45,7 +45,8 @@ export default function ProductsPage({ products, allGrades }: ProductsPageProps)
         <title>Steel Products - Bars, Rods & Alloy Steel | Shriram Steels Kolhapur</title>
         <meta name="description" content="Browse our complete range of steel products: black bars, bright bars, alloy steel rods. EN8, EN19, SS304, SS316 grades in stock. Get instant quotes." />
         <meta name="keywords" content="steel products, black bars, bright bars, alloy steel, EN8, EN19, SS304, SS316, steel rods, Kolhapur" />
-        <link rel="icon" href="/favicon-ss.ico" />
+        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" type="image/png" sizes="32x32" href="/shriram-steels.png" />
       </Head>
 
       <div className="min-h-screen">

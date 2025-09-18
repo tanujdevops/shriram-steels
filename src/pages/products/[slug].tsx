@@ -105,7 +105,8 @@ Please share your current rates and availability. Thank you!`;
         <title>{product.name} - {product.meta_description.split('.')[0]} | Shriram Steels</title>
         <meta name="description" content={product.meta_description} />
         <meta name="keywords" content={`${product.name.toLowerCase()}, ${product.grades.join(', ')}, steel bars, Shriram Steels, Kolhapur`} />
-        <link rel="icon" href="/favicon-ss.ico" />
+        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" type="image/png" sizes="32x32" href="/shriram-steels.png" />
         
         {/* Open Graph */}
         <meta property="og:title" content={`${product.name} - Premium Steel Products | Shriram Steels`} />

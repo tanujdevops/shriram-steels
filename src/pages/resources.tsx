@@ -84,7 +84,8 @@ export default function ResourcesPage() {
         <title>Technical Resources & Specifications - Steel Product Documentation | Shriram Steels</title>
         <meta name="description" content="Download technical specifications, product catalogs, and grade charts for steel bars from Shriram Steels. Complete documentation for informed decision making." />
         <meta name="keywords" content="steel specifications, technical documentation, product catalogs, grade charts, steel properties, application guides, material data sheets" />
-        <link rel="icon" href="/favicon-ss.ico" />
+        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" type="image/png" sizes="32x32" href="/shriram-steels.png" />
       </Head>
 
       <div className="min-h-screen">

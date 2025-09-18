@@ -32,7 +32,8 @@ export default function QualityPage() {
         <title>Quality Assurance - MTR, Testing & Certifications | Shriram Steels</title>
         <meta name="description" content="Comprehensive quality control at Shriram Steels. Material Test Reports, chemical analysis, mechanical testing for all steel products. ISO standards compliance." />
         <meta name="keywords" content="steel quality control, Material Test Reports, MTR, steel testing, chemical analysis, mechanical testing, quality certification, ISO standards" />
-        <link rel="icon" href="/favicon-ss.ico" />
+        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" type="image/png" sizes="32x32" href="/shriram-steels.png" />
       </Head>
 
       <div className="min-h-screen">

@@ -36,10 +36,10 @@ src/
 │       ├── bright-square-bars.json
 │       └── alloy-steel.json
 public/
-├── shriram-steels.png         # Company logo (actual)
+├── shriram-steels.png         # Company logo (actual) - also used as favicon
 ├── hero.jpg                   # Hero image (actual)
 ├── bg.png                     # Background image (actual)
-├── favicon-ss.ico             # Favicon
+├── favicon.ico                # Favicon (copy of shriram-steels.png)
 ├── robots.txt                 # Search engine directives
 ├── sitemap.xml               # Auto-generated sitemap
 ├── specs/                    # Product specification PDFs (TODO: Add actual files)

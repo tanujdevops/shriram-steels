@@ -20,7 +20,9 @@ export default function HomePage() {
         <title>Shriram Steels - Premium Steel Bars & Rods Manufacturer | Kolhapur</title>
         <meta name="description" content="Leading manufacturer of premium steel bars, bright bars, alloy steel rods in Kolhapur. EN8, EN19, SS304, SS316 grades available. Get instant quotes via WhatsApp." />
         <meta name="keywords" content="steel bars, bright bars, alloy steel, stainless steel, EN8, EN19, SS304, Kolhapur, Maharashtra, steel manufacturer" />
-        <link rel="icon" href="/favicon-ss.ico" />
+        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" type="image/png" sizes="32x32" href="/shriram-steels.png" />
+        <link rel="apple-touch-icon" href="/shriram-steels.png" />
         <meta property="og:title" content="Shriram Steels - Premium Steel Bars Manufacturer" />
         <meta property="og:description" content="Quality steel bars, bright bars & alloy steel from Kolhapur. Multiple grades in stock. Get instant quotes." />
         <meta property="og:type" content="website" />
