@@ -8,7 +8,6 @@ import { ArrowRight, Phone, MapPin, Mail, Shield, Truck, Award, Menu, X } from '
 import { Package, FileText, Download } from 'lucide-react';
 import { Sheet, SheetContent, SheetTrigger, SheetHeader, SheetTitle, SheetClose } from '../../components/ui/sheet';
 import { useState } from 'react';
-import HeroAnimation from '../components/HeroAnimation';
 
 const whatsappNumber = '+919623004455';
 const getQuoteMessage = encodeURIComponent('Hello! I would like to get a quote for steel products. Please share your current rates and availability.');
@@ -249,8 +248,19 @@ export default function HomePage() {
               </Button>
             </div>
 
-            {/* Hero Animation */}
-            <HeroAnimation />
+            {/* Hero Image */}
+            <div className="relative max-w-4xl mx-auto">
+              <div className="absolute top-2 lg:-top-8 left-1/2 transform -translate-x-1/2 w-[90%] mx-auto h-24 lg:h-80 bg-primary/30 rounded-full blur-3xl"></div>
+              <Image
+                width={1200}
+                height={800}
+                className="w-full mx-auto rounded-lg relative leading-none flex items-center border border-t-2 border-secondary border-t-primary/30"
+                src="/hero.png"
+                alt="Shriram Steels Manufacturing Facility"
+                priority
+              />
+              <div className="absolute bottom-0 left-0 w-full h-20 md:h-28 bg-gradient-to-b from-background/0 via-background/50 to-background rounded-lg"></div>
+            </div>
           </div>
         </section>
 
