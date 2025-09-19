@@ -249,24 +249,18 @@ export default function HomePage() {
             </div>
 
             {/* Hero Image */}
-            <div className="relative max-w-5xl mx-auto">
-              <div className="absolute top-4 lg:-top-4 left-1/2 transform -translate-x-1/2 w-[80%] mx-auto h-20 lg:h-60 bg-primary/25 rounded-full blur-3xl"></div>
-              <div className="relative overflow-hidden rounded-xl">
-                <Image
-                  width={1200}
-                  height={600}
-                  className="w-full h-auto object-cover object-center rounded-xl shadow-2xl border border-secondary/20"
-                  src="/hero.png"
-                  alt="Shriram Steels Manufacturing Facility"
-                  priority
-                  style={{
-                    maxHeight: '500px',
-                    minHeight: '300px'
-                  }}
-                />
-                <div className="absolute inset-0 bg-gradient-to-t from-black/20 via-transparent to-transparent rounded-xl"></div>
-              </div>
-              <div className="absolute bottom-0 left-0 w-full h-16 md:h-20 bg-gradient-to-b from-transparent via-background/60 to-background/90 rounded-b-xl"></div>
+            <div className="relative max-w-4xl mx-auto">
+              <Image
+                width={741}
+                height={239}
+                className="w-full h-auto object-cover object-center rounded-lg shadow-lg"
+                src="/hero.png"
+                alt="Shriram Steels Manufacturing Facility"
+                priority
+                style={{
+                  aspectRatio: '741/239'
+                }}
+              />
             </div>
           </div>
         </section>
