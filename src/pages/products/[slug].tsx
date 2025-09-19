@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import Head from 'next/head';
 import Image from 'next/image';
 import Link from 'next/link';
@@ -51,6 +51,8 @@ interface ProductDetailProps {
 }
 
 export default function ProductDetail({ product }: ProductDetailProps) {
+  const [selectedImageIndex, setSelectedImageIndex] = useState(0);
+  const [isLightboxOpen, setIsLightboxOpen] = useState(false);
   const [formData, setFormData] = useState({
     name: '',
     company: '',
@@ -60,6 +62,32 @@ export default function ProductDetail({ product }: ProductDetailProps) {
     grade: '',
     specifications: ''
   });
+
+  // Keyboard navigation for image gallery
+  useEffect(() => {
+    const handleKeyDown = (event: KeyboardEvent) => {
+      if (product.images.length <= 1) return;
+
+      if (event.key === 'ArrowLeft') {
+        setSelectedImageIndex(prev => prev > 0 ? prev - 1 : product.images.length - 1);
+      } else if (event.key === 'ArrowRight') {
+        setSelectedImageIndex(prev => prev < product.images.length - 1 ? prev + 1 : 0);
+      } else if (event.key === 'Escape' && isLightboxOpen) {
+        setIsLightboxOpen(false);
+      }
+    };
+
+    window.addEventListener('keydown', handleKeyDown);
+    return () => window.removeEventListener('keydown', handleKeyDown);
+  }, [product.images.length, isLightboxOpen]);
+
+  const nextImage = () => {
+    setSelectedImageIndex(prev => prev < product.images.length - 1 ? prev + 1 : 0);
+  };
+
+  const prevImage = () => {
+    setSelectedImageIndex(prev => prev > 0 ? prev - 1 : product.images.length - 1);
+  };
 
   const handleInputChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
     setFormData({
@@ -215,21 +243,57 @@ Please share your current rates and availability. Thank you!`;
                 {product.images.length > 0 ? (
                   <>
                     {/* Main Product Image */}
-                    <div className="aspect-square bg-muted rounded-lg overflow-hidden">
+                    <div
+                      className="aspect-square bg-muted rounded-lg overflow-hidden relative group cursor-zoom-in"
+                      onClick={() => setIsLightboxOpen(true)}
+                    >
                       <Image
-                        src={product.images[0]}
+                        src={product.images[selectedImageIndex]}
                         alt={product.name}
                         width={600}
                         height={600}
-                        className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
+                        className="w-full h-full object-cover hover:scale-110 transition-transform duration-500"
                         priority
                       />
+                      {/* Image counter overlay */}
+                      {product.images.length > 1 && (
+                        <div className="absolute top-4 right-4 bg-black/60 text-white px-2 py-1 rounded-full text-sm backdrop-blur-sm">
+                          {selectedImageIndex + 1} / {product.images.length}
+                        </div>
+                      )}
+                      {/* Navigation arrows for large screens */}
+                      {product.images.length > 1 && (
+                        <>
+                          <button
+                            onClick={prevImage}
+                            className="absolute left-2 top-1/2 -translate-y-1/2 w-10 h-10 bg-black/60 hover:bg-black/80 text-white rounded-full flex items-center justify-center opacity-0 group-hover:opacity-100 transition-all duration-300 hover:scale-110"
+                            aria-label="Previous image"
+                          >
+                            ←
+                          </button>
+                          <button
+                            onClick={nextImage}
+                            className="absolute right-2 top-1/2 -translate-y-1/2 w-10 h-10 bg-black/60 hover:bg-black/80 text-white rounded-full flex items-center justify-center opacity-0 group-hover:opacity-100 transition-all duration-300 hover:scale-110"
+                            aria-label="Next image"
+                          >
+                            →
+                          </button>
+                        </>
+                      )}
                     </div>
                     {/* Image Thumbnails */}
                     {product.images.length > 1 && (
                       <div className="grid grid-cols-4 gap-2">
                         {product.images.map((image, index) => (
-                          <div key={index} className="aspect-square bg-muted/50 rounded-lg overflow-hidden cursor-pointer hover:ring-2 hover:ring-primary transition-all">
+                          <div
+                            key={index}
+                            className={`aspect-square bg-muted/50 rounded-lg overflow-hidden cursor-pointer transition-all duration-300 ${
+                              selectedImageIndex === index
+                                ? 'ring-2 ring-primary ring-offset-2 scale-105'
+                                : 'hover:ring-2 hover:ring-primary/50 hover:scale-102'
+                            }`}
+                            onClick={() => setSelectedImageIndex(index)}
+                          >
                             <Image
                               src={image}
                               alt={`${product.name} - View ${index + 1}`}
@@ -583,6 +647,94 @@ Please share your current rates and availability. Thank you!`;
             </div>
           </div>
         </footer>
+
+        {/* Lightbox Modal */}
+        {isLightboxOpen && (
+          <div
+            className="fixed inset-0 z-50 flex items-center justify-center bg-black/90 backdrop-blur-sm"
+            onClick={() => setIsLightboxOpen(false)}
+          >
+            <div className="relative max-w-7xl max-h-screen p-4" onClick={(e) => e.stopPropagation()}>
+              {/* Close button */}
+              <button
+                onClick={() => setIsLightboxOpen(false)}
+                className="absolute -top-12 right-4 text-white hover:text-gray-300 text-2xl z-10"
+                aria-label="Close lightbox"
+              >
+                ✕
+              </button>
+
+              {/* Main lightbox image */}
+              <div className="relative">
+                <Image
+                  src={product.images[selectedImageIndex]}
+                  alt={product.name}
+                  width={1200}
+                  height={1200}
+                  className="max-w-full max-h-[90vh] object-contain rounded-lg"
+                  priority
+                />
+
+                {/* Navigation arrows */}
+                {product.images.length > 1 && (
+                  <>
+                    <button
+                      onClick={prevImage}
+                      className="absolute left-4 top-1/2 -translate-y-1/2 w-12 h-12 bg-black/60 hover:bg-black/80 text-white rounded-full flex items-center justify-center transition-all duration-300 hover:scale-110"
+                      aria-label="Previous image"
+                    >
+                      ←
+                    </button>
+                    <button
+                      onClick={nextImage}
+                      className="absolute right-4 top-1/2 -translate-y-1/2 w-12 h-12 bg-black/60 hover:bg-black/80 text-white rounded-full flex items-center justify-center transition-all duration-300 hover:scale-110"
+                      aria-label="Next image"
+                    >
+                      →
+                    </button>
+                  </>
+                )}
+
+                {/* Image counter */}
+                {product.images.length > 1 && (
+                  <div className="absolute bottom-4 left-1/2 -translate-x-1/2 bg-black/60 text-white px-4 py-2 rounded-full text-sm backdrop-blur-sm">
+                    {selectedImageIndex + 1} / {product.images.length}
+                  </div>
+                )}
+              </div>
+
+              {/* Thumbnail navigation */}
+              {product.images.length > 1 && (
+                <div className="flex justify-center mt-4 space-x-2 max-w-full overflow-x-auto pb-2">
+                  {product.images.map((image, index) => (
+                    <button
+                      key={index}
+                      onClick={() => setSelectedImageIndex(index)}
+                      className={`flex-shrink-0 w-16 h-16 rounded-lg overflow-hidden border-2 transition-all duration-300 ${
+                        selectedImageIndex === index
+                          ? 'border-white scale-110'
+                          : 'border-transparent hover:border-gray-300 hover:scale-105'
+                      }`}
+                    >
+                      <Image
+                        src={image}
+                        alt={`${product.name} - View ${index + 1}`}
+                        width={64}
+                        height={64}
+                        className="w-full h-full object-cover"
+                      />
+                    </button>
+                  ))}
+                </div>
+              )}
+            </div>
+
+            {/* Instructions overlay */}
+            <div className="absolute bottom-8 left-1/2 -translate-x-1/2 text-white/70 text-sm text-center">
+              <p>Use arrow keys to navigate • Click outside to close • Press ESC to exit</p>
+            </div>
+          </div>
+        )}
       </div>
     </>
   );
