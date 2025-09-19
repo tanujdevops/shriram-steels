@@ -323,14 +323,23 @@ export default function HomePage() {
             </div>
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
               {[
-                { name: 'Black Bars', desc: 'EN8, EN19, EN24 grades for general engineering', slug: 'black-bars' },
-                { name: 'Bright Round Bars', desc: 'Mirror finish for precision applications', slug: 'bright-round-bars' },
-                { name: 'Bright Flat Bars', desc: 'Perfect for machining and tooling', slug: 'bright-flat-bars' },
-                { name: 'Bright Hex Bars', desc: 'Ideal for fasteners and fittings', slug: 'bright-hex-bars' },
-                { name: 'Bright Square Bars', desc: 'Structural and decorative applications', slug: 'bright-square-bars' },
-                { name: 'Alloy Steel', desc: 'High-strength for critical components', slug: 'alloy-steel' }
+                { name: 'Black Bars', desc: 'EN8, EN19, EN24 grades for general engineering', slug: 'black-bars', image: '/products/blackbars1.png' },
+                { name: 'Bright Round Bars', desc: 'Mirror finish for precision applications', slug: 'bright-round-bars', image: '/products/brightroundbars1.png' },
+                { name: 'Bright Flat Bars', desc: 'Perfect for machining and tooling', slug: 'bright-flat-bars', image: '/products/brightflatbars1.png' },
+                { name: 'Bright Hex Bars', desc: 'Ideal for fasteners and fittings', slug: 'bright-hex-bars', image: '/products/hexbars1.png' },
+                { name: 'Bright Square Bars', desc: 'Structural and decorative applications', slug: 'bright-square-bars', image: '/products/brightsquarebars1.jpeg' },
+                { name: 'Alloy Steel', desc: 'High-strength for critical components', slug: 'alloy-steel', image: '/products/alloysteel1.png' }
               ].map((product) => (
-                <Card key={product.slug} className="glass-card">
+                <Card key={product.slug} className="glass-card overflow-hidden">
+                  <div className="relative h-48 w-full">
+                    <Image
+                      src={product.image}
+                      alt={product.name}
+                      fill
+                      className="object-cover"
+                      sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
+                    />
+                  </div>
                   <CardHeader>
                     <CardTitle className="text-lg">{product.name}</CardTitle>
                     <CardDescription>{product.desc}</CardDescription>
