@@ -80,97 +80,288 @@ module.exports = {
           from: { height: "var(--radix-collapsible-content-height)" },
           to: { height: 0 },
         },
-        // Steel bar floating animations
-        "steel-float-1": {
-          "0%, 100%": {
-            transform: "translate3d(-120px, -80px, 0) rotate(15deg) scale(1)",
+        // Dynamic steel manufacturing animations
+        "steel-beam-fly": {
+          "0%": {
+            transform: "translate3d(-200px, 300px, 0) rotate(-45deg) scale(0.8)",
+            opacity: "0"
+          },
+          "20%": {
+            transform: "translate3d(-100px, 200px, 0) rotate(-35deg) scale(1)",
             opacity: "0.8"
           },
-          "50%": {
-            transform: "translate3d(-100px, -120px, 0) rotate(25deg) scale(1.1)",
-            opacity: "1"
-          },
-        },
-        "steel-float-2": {
-          "0%, 100%": {
-            transform: "translate3d(150px, 60px, 0) rotate(45deg) scale(0.9)",
-            opacity: "0.7"
-          },
-          "50%": {
-            transform: "translate3d(180px, 80px, 0) rotate(55deg) scale(1)",
+          "80%": {
+            transform: "translate3d(400px, -100px, 0) rotate(-25deg) scale(1.1)",
             opacity: "0.9"
           },
+          "100%": {
+            transform: "translate3d(500px, -200px, 0) rotate(-15deg) scale(0.7)",
+            opacity: "0"
+          },
         },
-        "steel-float-3": {
-          "0%, 100%": {
-            transform: "translate3d(-80px, 100px, 0) rotate(-12deg) scale(1.1)",
+        "steel-ring-rotate": {
+          "0%": {
+            transform: "rotate(0deg) scale(0.8)",
             opacity: "0.6"
           },
           "50%": {
-            transform: "translate3d(-60px, 120px, 0) rotate(-20deg) scale(1.2)",
-            opacity: "0.8"
-          },
-        },
-        "steel-float-4": {
-          "0%, 100%": {
-            transform: "translate3d(80px, -60px, 0) rotate(-15deg) scale(1)",
-            opacity: "0.8"
-          },
-          "50%": {
-            transform: "translate3d(100px, -40px, 0) rotate(-10deg) scale(0.9)",
+            transform: "rotate(180deg) scale(1.1)",
             opacity: "1"
           },
+          "100%": {
+            transform: "rotate(360deg) scale(0.8)",
+            opacity: "0.6"
+          },
         },
-        "steel-float-5": {
+        "steel-formation-1": {
           "0%, 100%": {
-            transform: "translate3d(-200px, 40px, 0) rotate(75deg) scale(0.8)",
+            transform: "translate3d(-100px, -50px, 0) rotate(0deg) scale(0.5)",
+            opacity: "0.3"
+          },
+          "33%": {
+            transform: "translate3d(0px, 50px, 0) rotate(120deg) scale(1)",
+            opacity: "0.8"
+          },
+          "66%": {
+            transform: "translate3d(100px, -50px, 0) rotate(240deg) scale(1)",
+            opacity: "0.8"
+          },
+        },
+        "steel-formation-2": {
+          "0%, 100%": {
+            transform: "translate3d(150px, 100px, 0) rotate(0deg) scale(0.6)",
+            opacity: "0.4"
+          },
+          "33%": {
+            transform: "translate3d(-50px, -100px, 0) rotate(120deg) scale(1.1)",
+            opacity: "0.9"
+          },
+          "66%": {
+            transform: "translate3d(-150px, 100px, 0) rotate(240deg) scale(1.1)",
+            opacity: "0.9"
+          },
+        },
+        "steel-formation-3": {
+          "0%, 100%": {
+            transform: "translate3d(0px, -150px, 0) rotate(0deg) scale(0.7)",
             opacity: "0.5"
           },
           "50%": {
-            transform: "translate3d(-180px, 20px, 0) rotate(85deg) scale(0.9)",
-            opacity: "0.7"
+            transform: "translate3d(0px, 150px, 0) rotate(180deg) scale(1.2)",
+            opacity: "1"
           },
         },
-        "steel-float-6": {
-          "0%, 100%": {
-            transform: "translate3d(120px, 140px, 0) rotate(6deg) scale(0.9)",
-            opacity: "0.7"
+        "steel-spark-1": {
+          "0%": {
+            transform: "translate3d(-300px, -200px, 0) scale(0)",
+            opacity: "0"
           },
-          "50%": {
-            transform: "translate3d(140px, 160px, 0) rotate(12deg) scale(1)",
-            opacity: "0.9"
+          "10%": {
+            transform: "translate3d(-250px, -150px, 0) scale(1.5)",
+            opacity: "1"
+          },
+          "90%": {
+            transform: "translate3d(350px, 250px, 0) scale(0.3)",
+            opacity: "0.6"
+          },
+          "100%": {
+            transform: "translate3d(400px, 300px, 0) scale(0)",
+            opacity: "0"
           },
         },
-        // Sparkle animations
-        "steel-sparkle-1": {
-          "0%, 100%": {
-            transform: "translate3d(-250px, -100px, 0) scale(0.5)",
-            opacity: "0.3"
+        "steel-spark-2": {
+          "0%": {
+            transform: "translate3d(300px, -100px, 0) scale(0)",
+            opacity: "0"
           },
-          "50%": {
-            transform: "translate3d(-230px, -80px, 0) scale(1)",
+          "15%": {
+            transform: "translate3d(250px, -50px, 0) scale(1.2)",
             opacity: "0.8"
           },
+          "85%": {
+            transform: "translate3d(-350px, 150px, 0) scale(0.2)",
+            opacity: "0.4"
+          },
+          "100%": {
+            transform: "translate3d(-400px, 200px, 0) scale(0)",
+            opacity: "0"
+          },
         },
-        "steel-sparkle-2": {
+        "steel-spark-3": {
+          "0%": {
+            transform: "translate3d(0px, -250px, 0) scale(0)",
+            opacity: "0"
+          },
+          "20%": {
+            transform: "translate3d(-50px, -200px, 0) scale(1.8)",
+            opacity: "1"
+          },
+          "80%": {
+            transform: "translate3d(200px, 300px, 0) scale(0.1)",
+            opacity: "0.3"
+          },
+          "100%": {
+            transform: "translate3d(250px, 350px, 0) scale(0)",
+            opacity: "0"
+          },
+        },
+        "steel-spark-4": {
+          "0%": {
+            transform: "translate3d(-150px, 200px, 0) scale(0)",
+            opacity: "0"
+          },
+          "25%": {
+            transform: "translate3d(-100px, 150px, 0) scale(1)",
+            opacity: "0.9"
+          },
+          "75%": {
+            transform: "translate3d(300px, -200px, 0) scale(0.4)",
+            opacity: "0.5"
+          },
+          "100%": {
+            transform: "translate3d(350px, -250px, 0) scale(0)",
+            opacity: "0"
+          },
+        },
+        "steel-spark-5": {
+          "0%": {
+            transform: "translate3d(200px, 300px, 0) scale(0)",
+            opacity: "0"
+          },
+          "30%": {
+            transform: "translate3d(150px, 250px, 0) scale(1.3)",
+            opacity: "1"
+          },
+          "70%": {
+            transform: "translate3d(-300px, -150px, 0) scale(0.2)",
+            opacity: "0.4"
+          },
+          "100%": {
+            transform: "translate3d(-350px, -200px, 0) scale(0)",
+            opacity: "0"
+          },
+        },
+        "steel-hex-build": {
           "0%, 100%": {
-            transform: "translate3d(200px, -150px, 0) scale(0.3)",
+            transform: "translate3d(-200px, 100px, 0) rotate(0deg) scale(0.3)",
             opacity: "0.2"
           },
+          "25%": {
+            transform: "translate3d(-100px, 50px, 0) rotate(90deg) scale(0.8)",
+            opacity: "0.6"
+          },
           "50%": {
-            transform: "translate3d(220px, -130px, 0) scale(0.8)",
+            transform: "translate3d(100px, 50px, 0) rotate(180deg) scale(1.2)",
+            opacity: "1"
+          },
+          "75%": {
+            transform: "translate3d(200px, 100px, 0) rotate(270deg) scale(0.8)",
             opacity: "0.6"
           },
         },
-        "steel-sparkle-3": {
-          "0%, 100%": {
-            transform: "translate3d(-150px, 200px, 0) scale(0.4)",
-            opacity: "0.4"
+        "steel-plate-slide-1": {
+          "0%": {
+            transform: "translate3d(-400px, 80px, 0) rotate(0deg)",
+            opacity: "0"
+          },
+          "30%": {
+            transform: "translate3d(-100px, 60px, 0) rotate(5deg)",
+            opacity: "0.8"
+          },
+          "70%": {
+            transform: "translate3d(300px, 40px, 0) rotate(-5deg)",
+            opacity: "0.8"
+          },
+          "100%": {
+            transform: "translate3d(500px, 20px, 0) rotate(0deg)",
+            opacity: "0"
+          },
+        },
+        "steel-plate-slide-2": {
+          "0%": {
+            transform: "translate3d(400px, -80px, 0) rotate(0deg)",
+            opacity: "0"
+          },
+          "30%": {
+            transform: "translate3d(100px, -60px, 0) rotate(-3deg)",
+            opacity: "0.9"
+          },
+          "70%": {
+            transform: "translate3d(-300px, -40px, 0) rotate(3deg)",
+            opacity: "0.9"
+          },
+          "100%": {
+            transform: "translate3d(-500px, -20px, 0) rotate(0deg)",
+            opacity: "0"
+          },
+        },
+        "steel-orbit-1": {
+          "0%": {
+            transform: "translate3d(150px, 0px, 0) rotate(0deg)",
+            opacity: "0.5"
+          },
+          "25%": {
+            transform: "translate3d(0px, -150px, 0) rotate(90deg)",
+            opacity: "1"
           },
           "50%": {
-            transform: "translate3d(-130px, 180px, 0) scale(0.9)",
-            opacity: "0.7"
+            transform: "translate3d(-150px, 0px, 0) rotate(180deg)",
+            opacity: "1"
           },
+          "75%": {
+            transform: "translate3d(0px, 150px, 0) rotate(270deg)",
+            opacity: "1"
+          },
+          "100%": {
+            transform: "translate3d(150px, 0px, 0) rotate(360deg)",
+            opacity: "0.5"
+          },
+        },
+        "steel-orbit-2": {
+          "0%": {
+            transform: "translate3d(-120px, 0px, 0) rotate(0deg)",
+            opacity: "0.6"
+          },
+          "25%": {
+            transform: "translate3d(0px, 120px, 0) rotate(-90deg)",
+            opacity: "1"
+          },
+          "50%": {
+            transform: "translate3d(120px, 0px, 0) rotate(-180deg)",
+            opacity: "1"
+          },
+          "75%": {
+            transform: "translate3d(0px, -120px, 0) rotate(-270deg)",
+            opacity: "1"
+          },
+          "100%": {
+            transform: "translate3d(-120px, 0px, 0) rotate(-360deg)",
+            opacity: "0.6"
+          },
+        },
+        "heat-wave-1": {
+          "0%, 100%": {
+            transform: "translateX(-100%) scaleY(0.5)",
+            opacity: "0.3"
+          },
+          "50%": {
+            transform: "translateX(100%) scaleY(1.5)",
+            opacity: "0.8"
+          },
+        },
+        "heat-wave-2": {
+          "0%, 100%": {
+            transform: "translateX(100%) scaleY(0.8)",
+            opacity: "0.2"
+          },
+          "50%": {
+            transform: "translateX(-100%) scaleY(1.2)",
+            opacity: "0.6"
+          },
+        },
+        "spin-slow": {
+          "0%": { transform: "rotate(0deg)" },
+          "100%": { transform: "rotate(360deg)" },
         },
         "pulse-slow": {
           "0%, 100%": { transform: "scale(1)", opacity: "0.8" },
@@ -182,18 +373,30 @@ module.exports = {
         "accordion-up": "accordion-up 0.2s ease-out",
         "collapsible-down": "collapsible-down 0.2s ease-in-out",
         "collapsible-up": "collapsible-up 0.2s ease-in-out",
-        // Steel bar animations
-        "steel-float-1": "steel-float-1 8s ease-in-out infinite",
-        "steel-float-2": "steel-float-2 10s ease-in-out infinite 1s",
-        "steel-float-3": "steel-float-3 7s ease-in-out infinite 2s",
-        "steel-float-4": "steel-float-4 9s ease-in-out infinite 0.5s",
-        "steel-float-5": "steel-float-5 11s ease-in-out infinite 3s",
-        "steel-float-6": "steel-float-6 6s ease-in-out infinite 1.5s",
-        // Sparkle animations
-        "steel-sparkle-1": "steel-sparkle-1 4s ease-in-out infinite",
-        "steel-sparkle-2": "steel-sparkle-2 5s ease-in-out infinite 1s",
-        "steel-sparkle-3": "steel-sparkle-3 3s ease-in-out infinite 2s",
+        // Dynamic steel manufacturing animations
+        "steel-beam-fly": "steel-beam-fly 12s linear infinite",
+        "steel-ring-rotate": "steel-ring-rotate 8s ease-in-out infinite",
+        "steel-formation-1": "steel-formation-1 15s ease-in-out infinite",
+        "steel-formation-2": "steel-formation-2 18s ease-in-out infinite 2s",
+        "steel-formation-3": "steel-formation-3 10s ease-in-out infinite 1s",
+        "steel-spark-1": "steel-spark-1 6s linear infinite",
+        "steel-spark-2": "steel-spark-2 7s linear infinite 1s",
+        "steel-spark-3": "steel-spark-3 5s linear infinite 2s",
+        "steel-spark-4": "steel-spark-4 8s linear infinite 3s",
+        "steel-spark-5": "steel-spark-5 6s linear infinite 4s",
+        "steel-hex-build": "steel-hex-build 20s ease-in-out infinite",
+        "steel-plate-slide-1": "steel-plate-slide-1 14s linear infinite",
+        "steel-plate-slide-2": "steel-plate-slide-2 16s linear infinite 3s",
+        "steel-orbit-1": "steel-orbit-1 12s linear infinite",
+        "steel-orbit-2": "steel-orbit-2 10s linear infinite 2s",
+        "heat-wave-1": "heat-wave-1 4s ease-in-out infinite",
+        "heat-wave-2": "heat-wave-2 5s ease-in-out infinite 1s",
+        "spin-slow": "spin-slow 30s linear infinite",
         "pulse-slow": "pulse-slow 3s ease-in-out infinite",
+      },
+      backgroundImage: {
+        'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
+        'gradient-conic': 'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
       },
     },
   },

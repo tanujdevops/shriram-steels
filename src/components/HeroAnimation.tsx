@@ -3,83 +3,96 @@ import React from 'react';
 const HeroAnimation: React.FC = () => {
   return (
     <div
-      className="relative max-w-4xl mx-auto h-[400px] md:h-[500px] lg:h-[600px] overflow-hidden"
+      className="relative w-full h-[500px] md:h-[600px] lg:h-[700px] overflow-hidden"
       role="img"
-      aria-label="Animated steel bars representing premium steel manufacturing"
+      aria-label="Dynamic steel manufacturing animation"
     >
-      {/* Background glow effect */}
-      <div className="absolute top-2 lg:-top-8 left-1/2 transform -translate-x-1/2 w-[90%] mx-auto h-24 lg:h-80 bg-primary/30 rounded-full blur-3xl"></div>
+      {/* Ambient glow layers - no containers, pure atmosphere */}
+      <div className="absolute inset-0 bg-gradient-radial from-primary/10 via-transparent to-transparent"></div>
+      <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-[120%] h-[120%] bg-gradient-conic from-primary/5 via-transparent to-secondary/5 animate-spin-slow"></div>
 
-      {/* Main animation container */}
-      <div className="relative w-full h-full flex items-center justify-center will-change-transform">
-        {/* Steel Bar 1 - Large vertical bar */}
-        <div className="absolute animate-steel-float-1 will-change-transform" style={{ transform: 'translateZ(0)' }}>
-          <div className="steel-bar-vertical w-6 h-32 md:w-8 md:h-40 lg:w-10 lg:h-48"></div>
-        </div>
+      {/* Main steel manufacturing scene */}
+      <div className="relative w-full h-full">
 
-        {/* Steel Bar 2 - Medium horizontal bar */}
-        <div className="absolute animate-steel-float-2 will-change-transform" style={{ transform: 'translateZ(0)' }}>
-          <div className="steel-bar-horizontal w-24 h-4 md:w-32 md:h-6 lg:w-40 lg:h-8 transform rotate-45"></div>
+        {/* Large Steel Beam - Flying diagonally across screen */}
+        <div className="absolute animate-steel-beam-fly will-change-transform" style={{ transform: 'translateZ(0)' }}>
+          <div className="steel-beam-large w-2 h-64 md:w-3 md:h-80 lg:w-4 lg:h-96"></div>
         </div>
 
-        {/* Steel Bar 3 - Small vertical bar */}
-        <div className="absolute animate-steel-float-3 will-change-transform" style={{ transform: 'translateZ(0)' }}>
-          <div className="steel-bar-vertical w-4 h-20 md:w-6 md:h-28 lg:w-8 lg:h-36 transform -rotate-12"></div>
+        {/* Rotating Steel Ring - Central focal element */}
+        <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 animate-steel-ring-rotate will-change-transform">
+          <div className="steel-ring w-32 h-32 md:w-48 md:h-48 lg:w-64 lg:h-64"></div>
         </div>
 
-        {/* Steel Bar 4 - Horizontal bar */}
-        <div className="absolute animate-steel-float-4 will-change-transform" style={{ transform: 'translateZ(0)' }}>
-          <div className="steel-bar-horizontal w-20 h-5 md:w-28 md:h-7 lg:w-36 lg:h-9 transform rotate-[-15deg]"></div>
+        {/* Multiple steel rods forming geometric patterns */}
+        <div className="absolute animate-steel-formation-1 will-change-transform" style={{ transform: 'translateZ(0)' }}>
+          <div className="steel-rod-thin w-1 h-24 md:w-1.5 md:h-32 lg:w-2 lg:h-40"></div>
         </div>
 
-        {/* Steel Bar 5 - Small angled bar */}
-        <div className="absolute animate-steel-float-5 will-change-transform" style={{ transform: 'translateZ(0)' }}>
-          <div className="steel-bar-horizontal w-16 h-3 md:w-20 md:h-4 lg:w-24 lg:h-5 transform rotate-75"></div>
+        <div className="absolute animate-steel-formation-2 will-change-transform" style={{ transform: 'translateZ(0)' }}>
+          <div className="steel-rod-thin w-1 h-24 md:w-1.5 md:h-32 lg:w-2 lg:h-40"></div>
         </div>
 
-        {/* Steel Bar 6 - Medium vertical bar */}
-        <div className="absolute animate-steel-float-6 will-change-transform" style={{ transform: 'translateZ(0)' }}>
-          <div className="steel-bar-vertical w-5 h-28 md:w-7 md:h-36 lg:w-9 lg:h-44 transform rotate-6"></div>
+        <div className="absolute animate-steel-formation-3 will-change-transform" style={{ transform: 'translateZ(0)' }}>
+          <div className="steel-rod-thin w-1 h-24 md:w-1.5 md:h-32 lg:w-2 lg:h-40"></div>
         </div>
 
-        {/* Central focal point - Brand logo area */}
-        <div className="relative z-10 w-32 h-32 md:w-40 md:h-40 lg:w-48 lg:h-48 rounded-full bg-gradient-to-br from-primary/20 to-secondary/20 backdrop-blur-sm border border-primary/30 flex items-center justify-center animate-pulse-slow will-change-transform">
-          <div className="text-primary font-bold text-lg md:text-xl lg:text-2xl text-center pointer-events-none select-none">
-            STEEL
-            <br />
-            <span className="text-sm md:text-base lg:text-lg opacity-90">EXCELLENCE</span>
-          </div>
+        {/* Steel particles - welding sparks effect */}
+        <div className="absolute animate-steel-spark-1 will-change-transform">
+          <div className="steel-spark w-1 h-1 md:w-1.5 md:h-1.5 lg:w-2 lg:h-2"></div>
+        </div>
+        <div className="absolute animate-steel-spark-2 will-change-transform">
+          <div className="steel-spark w-0.5 h-0.5 md:w-1 md:h-1 lg:w-1.5 lg:h-1.5"></div>
+        </div>
+        <div className="absolute animate-steel-spark-3 will-change-transform">
+          <div className="steel-spark w-1.5 h-1.5 md:w-2 md:h-2 lg:w-2.5 lg:h-2.5"></div>
+        </div>
+        <div className="absolute animate-steel-spark-4 will-change-transform">
+          <div className="steel-spark w-0.5 h-0.5 md:w-0.5 md:h-0.5 lg:w-1 lg:h-1"></div>
+        </div>
+        <div className="absolute animate-steel-spark-5 will-change-transform">
+          <div className="steel-spark w-1 h-1 md:w-1.5 md:h-1.5 lg:w-2 lg:h-2"></div>
         </div>
 
-        {/* Additional smaller elements for depth */}
-        <div className="absolute animate-steel-sparkle-1 will-change-transform" style={{ transform: 'translateZ(0)' }}>
-          <div className="w-2 h-2 md:w-3 md:h-3 lg:w-4 lg:h-4 bg-primary rounded-full opacity-60"></div>
+        {/* Hexagonal steel structure - building/assembling effect */}
+        <div className="absolute animate-steel-hex-build will-change-transform" style={{ transform: 'translateZ(0)' }}>
+          <div className="steel-hex-structure w-8 h-8 md:w-12 md:h-12 lg:w-16 lg:h-16"></div>
         </div>
-        <div className="absolute animate-steel-sparkle-2 will-change-transform" style={{ transform: 'translateZ(0)' }}>
-          <div className="w-1.5 h-1.5 md:w-2 md:h-2 lg:w-3 lg:h-3 bg-secondary rounded-full opacity-40"></div>
+
+        {/* Steel plates - sliding and stacking */}
+        <div className="absolute animate-steel-plate-slide-1 will-change-transform">
+          <div className="steel-plate w-16 h-3 md:w-24 md:h-4 lg:w-32 lg:h-5"></div>
         </div>
-        <div className="absolute animate-steel-sparkle-3 will-change-transform" style={{ transform: 'translateZ(0)' }}>
-          <div className="w-2.5 h-2.5 md:w-3.5 md:h-3.5 lg:w-4.5 lg:h-4.5 bg-primary rounded-full opacity-50"></div>
+        <div className="absolute animate-steel-plate-slide-2 will-change-transform">
+          <div className="steel-plate w-20 h-3 md:w-28 md:h-4 lg:w-36 lg:h-5"></div>
+        </div>
+
+        {/* Orbital steel elements - creating dynamic movement */}
+        <div className="absolute animate-steel-orbit-1 will-change-transform" style={{ transform: 'translateZ(0)' }}>
+          <div className="steel-rod-medium w-1.5 h-12 md:w-2 md:h-16 lg:w-2.5 lg:h-20"></div>
+        </div>
+        <div className="absolute animate-steel-orbit-2 will-change-transform" style={{ transform: 'translateZ(0)' }}>
+          <div className="steel-rod-medium w-1.5 h-12 md:w-2 md:h-16 lg:w-2.5 lg:h-20"></div>
+        </div>
+
+        {/* Heat/energy waves - representing steel forging */}
+        <div className="absolute animate-heat-wave-1 will-change-transform">
+          <div className="heat-wave w-full h-1 md:h-1.5 lg:h-2"></div>
+        </div>
+        <div className="absolute animate-heat-wave-2 will-change-transform">
+          <div className="heat-wave w-full h-1 md:h-1.5 lg:h-2"></div>
         </div>
       </div>
 
-      {/* Bottom gradient overlay */}
-      <div className="absolute bottom-0 left-0 w-full h-20 md:h-28 bg-gradient-to-b from-background/0 via-background/50 to-background rounded-lg pointer-events-none"></div>
+      {/* Seamless edge blending - no visible containers */}
+      <div className="absolute inset-0 pointer-events-none bg-gradient-to-t from-background/30 via-transparent to-transparent"></div>
+      <div className="absolute inset-0 pointer-events-none bg-gradient-to-b from-background/20 via-transparent to-background/40"></div>
 
       {/* Reduce motion support */}
       <style jsx>{`
         @media (prefers-reduced-motion: reduce) {
-          .animate-steel-float-1,
-          .animate-steel-float-2,
-          .animate-steel-float-3,
-          .animate-steel-float-4,
-          .animate-steel-float-5,
-          .animate-steel-float-6,
-          .animate-steel-sparkle-1,
-          .animate-steel-sparkle-2,
-          .animate-steel-sparkle-3,
-          .animate-pulse-slow {
-            animation: none;
+          [class*="animate-"] {
+            animation: none !important;
           }
         }
       `}</style>
