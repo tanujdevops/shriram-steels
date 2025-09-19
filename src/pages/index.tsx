@@ -70,7 +70,7 @@ export default function HomePage() {
                 alt="Shriram Steels Logo"
                 width={120}
                 height={36}
-                className="h-6 w-auto"
+                className="h-8 w-auto md:h-10"
                 priority
               />
             </Link>
