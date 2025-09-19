@@ -255,7 +255,7 @@ export default function HomePage() {
                 width={1200}
                 height={800}
                 className="w-full mx-auto rounded-lg relative leading-none flex items-center border border-t-2 border-secondary border-t-primary/30"
-                src="/hero.jpg"
+                src="/hero.png"
                 alt="Shriram Steels Manufacturing Facility"
                 priority
               />
