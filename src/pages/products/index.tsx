@@ -3,6 +3,7 @@ import Head from 'next/head';
 import Image from 'next/image';
 import Link from 'next/link';
 import { GetStaticProps } from 'next';
+import { Navbar } from '../../../components/navbar';
 import { Button } from '../../../components/ui/button';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '../../../components/ui/card';
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from '../../../components/ui/select';
@@ -51,32 +52,7 @@ export default function ProductsPage({ products, allGrades }: ProductsPageProps)
       </Head>
 
       <div className="min-h-screen">
-        {/* Header */}
-        <header className="border-b">
-          <div className="container mx-auto px-4 py-2 flex justify-between items-center">
-            <Link href="/">
-              <Image
-                src="/shriram-steels.png"
-                alt="Shriram Steels Logo"
-                width={120}
-                height={36}
-                priority
-              />
-            </Link>
-            <nav className="hidden md:flex space-x-6">
-              <Link href="/products" className="text-sm font-medium text-primary">Products</Link>
-              <Link href="/about" className="text-sm font-medium hover:text-primary transition-colors">About</Link>
-              <Link href="/quality" className="text-sm font-medium hover:text-primary transition-colors">Quality</Link>
-              <Link href="/resources" className="text-sm font-medium hover:text-primary transition-colors">Resources</Link>
-            </nav>
-            <Button size="sm" asChild>
-              <a href={`https://wa.me/${whatsappNumber}`} target="_blank" rel="noopener noreferrer">
-                <Phone className="mr-2 h-4 w-4" />
-                Get Quote
-              </a>
-            </Button>
-          </div>
-        </header>
+        <Navbar currentPage="/products" />
 
         {/* Hero Section */}
         <section className="py-16 bg-muted/50">
