@@ -349,14 +349,14 @@ Please share your current rates and availability. Thank you!`;
                 </div>
 
                 {/* Action Buttons */}
-                <div className="flex flex-col sm:flex-row gap-3">
-                  <Button size="lg" className="flex-1" asChild>
+                <div className="flex flex-col gap-3">
+                  <Button size="lg" className="w-full" asChild>
                     <a href={`https://wa.me/${whatsappNumber}?text=${encodeURIComponent(`I want a quote for ${product.name}`)}`} target="_blank" rel="noopener noreferrer">
                       <Phone className="mr-2 h-4 w-4" />
                       Get Instant Quote
                     </a>
                   </Button>
-                  <Button size="lg" variant="outline" className="flex-1" asChild>
+                  <Button size="lg" variant="outline" className="w-full" asChild>
                     <a href={`https://wa.me/${whatsappNumber}?text=${downloadSpecMessage}`} target="_blank" rel="noopener noreferrer">
                       <Download className="mr-2 h-4 w-4" />
                       Download Specs

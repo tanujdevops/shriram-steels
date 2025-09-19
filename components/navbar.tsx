@@ -18,7 +18,15 @@ export function Navbar({ currentPage }: NavbarProps) {
 
   const whatsappQuoteLink = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent('Hello! I found your website and would like to get a quote for steel products. Please share your current rates and availability.')}`;
 
-  const navigationItems = [
+  const desktopNavigationItems = [
+    { href: '/products', label: 'Products' },
+    { href: '/about', label: 'About' },
+    { href: '/quality', label: 'Quality' },
+    { href: '/resources', label: 'Resources' },
+  ];
+
+  const mobileNavigationItems = [
+    { href: '/', label: 'Home' },
     { href: '/products', label: 'Products' },
     { href: '/about', label: 'About' },
     { href: '/quality', label: 'Quality' },
@@ -43,7 +51,7 @@ export function Navbar({ currentPage }: NavbarProps) {
         {/* Desktop Navigation */}
         <div className="hidden md:flex items-center space-x-6">
           <nav className="flex space-x-6">
-            {navigationItems.map((item) => (
+            {desktopNavigationItems.map((item) => (
               <Link
                 key={item.href}
                 href={item.href}
@@ -89,7 +97,7 @@ export function Navbar({ currentPage }: NavbarProps) {
               </SheetHeader>
 
               <div className="flex flex-col space-y-3">
-                {navigationItems.map((item) => (
+                {mobileNavigationItems.map((item) => (
                   <Link
                     key={item.href}
                     href={item.href}
