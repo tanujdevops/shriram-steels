@@ -4,13 +4,17 @@ import Link from 'next/link';
 import { Button } from '../../components/ui/button';
 import { Badge } from '../../components/ui/badge';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '../../components/ui/card';
-import { ArrowRight, Phone, MapPin, Mail, Shield, Truck, Award } from 'lucide-react';
+import { ArrowRight, Phone, MapPin, Mail, Shield, Truck, Award, Menu, X } from 'lucide-react';
+import { Package, FileText, Download } from 'lucide-react';
+import { Sheet, SheetContent, SheetTrigger, SheetHeader, SheetTitle, SheetClose } from '../../components/ui/sheet';
+import { useState } from 'react';
 
 const whatsappNumber = '+919623004455';
 const getQuoteMessage = encodeURIComponent('Hello! I would like to get a quote for steel products. Please share your current rates and availability.');
 const downloadMessage = encodeURIComponent('Hi! I would like to download product specifications and technical details. Could you please share the latest catalogs?');
 
 export default function HomePage() {
+  const [isOpen, setIsOpen] = useState(false);
   const whatsappQuoteLink = `https://wa.me/${whatsappNumber}?text=${getQuoteMessage}`;
   const whatsappDownloadLink = `https://wa.me/${whatsappNumber}?text=${downloadMessage}`;
 
@@ -60,7 +64,7 @@ export default function HomePage() {
         {/* Header */}
         <header className="border-b">
           <div className="container mx-auto px-4 py-2 flex justify-between items-center">
-            <div className="flex items-center space-x-4">
+            <Link href="/" className="flex items-center space-x-4">
               <Image
                 src="/shriram-steels.png"
                 alt="Shriram Steels Logo"
@@ -68,19 +72,142 @@ export default function HomePage() {
                 height={36}
                 priority
               />
+            </Link>
+
+            {/* Desktop Navigation */}
+            <div className="hidden md:flex items-center space-x-6">
+              <nav className="flex space-x-6">
+                <Link href="/products" className="text-sm font-medium hover:text-primary transition-colors">Products</Link>
+                <Link href="/about" className="text-sm font-medium hover:text-primary transition-colors">About</Link>
+                <Link href="/quality" className="text-sm font-medium hover:text-primary transition-colors">Quality</Link>
+                <Link href="/resources" className="text-sm font-medium hover:text-primary transition-colors">Resources</Link>
+              </nav>
+              <Button size="sm" asChild>
+                <a href={whatsappQuoteLink} target="_blank" rel="noopener noreferrer">
+                  <Phone className="mr-2 h-4 w-4" />
+                  Get Quote
+                </a>
+              </Button>
             </div>
-            <nav className="hidden md:flex space-x-6">
-              <Link href="/products" className="text-sm font-medium hover:text-primary transition-colors">Products</Link>
-              <Link href="/about" className="text-sm font-medium hover:text-primary transition-colors">About</Link>
-              <Link href="/quality" className="text-sm font-medium hover:text-primary transition-colors">Quality</Link>
-              <Link href="/resources" className="text-sm font-medium hover:text-primary transition-colors">Resources</Link>
-            </nav>
-            <Button size="sm" asChild>
-              <a href={whatsappQuoteLink} target="_blank" rel="noopener noreferrer">
-                <Phone className="mr-2 h-4 w-4" />
-                Get Quote
-              </a>
-            </Button>
+
+            {/* Mobile Navigation */}
+            <div className="md:hidden">
+              <Sheet open={isOpen} onOpenChange={setIsOpen}>
+                <SheetTrigger asChild>
+                  <Button variant="ghost" size="sm" className="p-2">
+                    <Menu className="h-6 w-6" />
+                    <span className="sr-only">Open navigation menu</span>
+                  </Button>
+                </SheetTrigger>
+                <SheetContent side="right" className="w-[300px] sm:w-[350px]">
+                  <SheetHeader className="border-b pb-4 mb-6">
+                    <div className="flex items-center space-x-3">
+                      <Image
+                        src="/shriram-steels.png"
+                        alt="Shriram Steels"
+                        width={100}
+                        height={30}
+                      />
+                    </div>
+                    <SheetTitle className="text-left text-lg font-semibold">
+                      Navigation
+                    </SheetTitle>
+                  </SheetHeader>
+                  
+                  <div className="flex flex-col space-y-3">
+                    {/* Navigation Links */}
+                    <Button 
+                      variant="ghost" 
+                      className="justify-start w-full h-12 text-base font-medium"
+                      asChild
+                      onClick={() => setIsOpen(false)}
+                    >
+                      <Link href="/products">
+                        <Package className="mr-3 h-5 w-5" />
+                        Products
+                      </Link>
+                    </Button>
+                    
+                    <Button 
+                      variant="ghost" 
+                      className="justify-start w-full h-12 text-base font-medium"
+                      asChild
+                      onClick={() => setIsOpen(false)}
+                    >
+                      <Link href="/about">
+                        <Shield className="mr-3 h-5 w-5" />
+                        About Us
+                      </Link>
+                    </Button>
+                    
+                    <Button 
+                      variant="ghost" 
+                      className="justify-start w-full h-12 text-base font-medium"
+                      asChild
+                      onClick={() => setIsOpen(false)}
+                    >
+                      <Link href="/quality">
+                        <Award className="mr-3 h-5 w-5" />
+                        Quality
+                      </Link>
+                    </Button>
+                    
+                    <Button 
+                      variant="ghost" 
+                      className="justify-start w-full h-12 text-base font-medium"
+                      asChild
+                      onClick={() => setIsOpen(false)}
+                    >
+                      <Link href="/resources">
+                        <FileText className="mr-3 h-5 w-5" />
+                        Resources
+                      </Link>
+                    </Button>
+                    
+                    {/* Divider */}
+                    <div className="border-t my-4"></div>
+                    
+                    {/* Contact Actions */}
+                    <Button 
+                      className="w-full h-12 text-base font-medium"
+                      asChild
+                      onClick={() => setIsOpen(false)}
+                    >
+                      <a href={whatsappQuoteLink} target="_blank" rel="noopener noreferrer">
+                        <Phone className="mr-3 h-5 w-5" />
+                        Get Quote
+                      </a>
+                    </Button>
+                    
+                    <Button 
+                      variant="outline" 
+                      className="w-full h-12 text-base font-medium"
+                      asChild
+                      onClick={() => setIsOpen(false)}
+                    >
+                      <a href={whatsappDownloadLink} target="_blank" rel="noopener noreferrer">
+                        <Download className="mr-3 h-5 w-5" />
+                        Download Specs
+                      </a>
+                    </Button>
+                    
+                    {/* Contact Info */}
+                    <div className="mt-6 pt-4 border-t">
+                      <div className="text-sm text-muted-foreground space-y-2">
+                        <div className="flex items-center">
+                          <MapPin className="mr-2 h-4 w-4" />
+                          <span>Kolhapur, Maharashtra</span>
+                        </div>
+                        <div className="flex items-center">
+                          <Phone className="mr-2 h-4 w-4" />
+                          <span>+91 96230 04455</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </SheetContent>
+              </Sheet>
+            </div>
           </div>
         </header>
 
