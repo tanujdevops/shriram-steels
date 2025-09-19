@@ -107,6 +107,7 @@ export default function HomePage() {
                         alt="Shriram Steels"
                         width={100}
                         height={30}
+                        className="h-6 w-auto"
                       />
                     </div>
                     <SheetTitle className="text-left text-lg font-semibold">
