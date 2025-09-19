@@ -7,7 +7,7 @@ import { Button } from '../../../components/ui/button';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '../../../components/ui/card';
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from '../../../components/ui/select';
 import { Badge } from '../../../components/ui/badge';
-import { ArrowRight, Phone, MapPin, Mail } from 'lucide-react';
+import { ArrowRight, Phone, MapPin, Mail, Package } from 'lucide-react';
 
 const whatsappNumber = '+919623004455';
 
@@ -19,6 +19,7 @@ interface Product {
   grades: string[];
   sizes: string[];
   features: string[];
+  images: string[];
   availability: string;
   min_order_qty: string;
   price: string;
@@ -120,11 +121,26 @@ export default function ProductsPage({ products, allGrades }: ProductsPageProps)
             {/* Products Grid */}
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
               {filteredProducts.map((product) => (
-                <Card key={product.slug} className="glass-card">
+                <Card key={product.slug} className="glass-card overflow-hidden">
+                  {/* Product Image */}
+                  <div className="aspect-[4/3] bg-muted relative overflow-hidden">
+                    {product.images && product.images.length > 0 ? (
+                      <Image
+                        src={product.images[0]}
+                        alt={product.name}
+                        fill
+                        className="object-cover hover:scale-105 transition-transform duration-300"
+                      />
+                    ) : (
+                      <div className="w-full h-full flex items-center justify-center">
+                        <Package className="h-12 w-12 text-muted-foreground" />
+                      </div>
+                    )}
+                  </div>
                   <CardHeader>
                     <div className="flex justify-between items-start mb-2">
                       <CardTitle className="text-xl">{product.name}</CardTitle>
-                      <Badge 
+                      <Badge
                         variant={product.availability === 'In Stock' ? 'default' : 'secondary'}
                       >
                         {product.availability}

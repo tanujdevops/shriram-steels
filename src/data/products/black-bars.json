@@ -28,7 +28,7 @@
     "Automotive parts"
   ],
   "spec_pdf": "/specs/black-bars-specs.pdf",
-  "images": ["/products/black-bars-1.jpg", "/products/black-bars-2.jpg"],
+  "images": ["/products/blackbars1.png", "/products/blackbars2.png", "/products/blackbars3.png", "/products/blackbars4.png"],
   "availability": "In Stock",
   "min_order_qty": "1 MT",
   "price": "Request Quote"

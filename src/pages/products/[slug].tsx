@@ -212,23 +212,47 @@ Please share your current rates and availability. Thank you!`;
             <div className="grid lg:grid-cols-2 gap-12">
               {/* Product Images */}
               <div className="space-y-4">
-                {/* TODO: Replace with actual product images */}
-                <div className="aspect-square bg-muted rounded-lg flex items-center justify-center">
-                  <div className="text-center">
-                    <Package className="h-16 w-16 text-muted-foreground mx-auto mb-4" />
-                    <p className="text-muted-foreground">Product Image</p>
-                    <p className="text-sm text-muted-foreground mt-1">
-                      TODO: Add actual {product.name} photography
-                    </p>
-                  </div>
-                </div>
-                <div className="grid grid-cols-3 gap-2">
-                  {product.images.map((_, index) => (
-                    <div key={index} className="aspect-square bg-muted/50 rounded-lg flex items-center justify-center">
-                      <Package className="h-8 w-8 text-muted-foreground" />
+                {product.images.length > 0 ? (
+                  <>
+                    {/* Main Product Image */}
+                    <div className="aspect-square bg-muted rounded-lg overflow-hidden">
+                      <Image
+                        src={product.images[0]}
+                        alt={product.name}
+                        width={600}
+                        height={600}
+                        className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
+                        priority
+                      />
                     </div>
-                  ))}
-                </div>
+                    {/* Image Thumbnails */}
+                    {product.images.length > 1 && (
+                      <div className="grid grid-cols-4 gap-2">
+                        {product.images.map((image, index) => (
+                          <div key={index} className="aspect-square bg-muted/50 rounded-lg overflow-hidden cursor-pointer hover:ring-2 hover:ring-primary transition-all">
+                            <Image
+                              src={image}
+                              alt={`${product.name} - View ${index + 1}`}
+                              width={150}
+                              height={150}
+                              className="w-full h-full object-cover"
+                            />
+                          </div>
+                        ))}
+                      </div>
+                    )}
+                  </>
+                ) : (
+                  <div className="aspect-square bg-muted rounded-lg flex items-center justify-center">
+                    <div className="text-center">
+                      <Package className="h-16 w-16 text-muted-foreground mx-auto mb-4" />
+                      <p className="text-muted-foreground">Product Image</p>
+                      <p className="text-sm text-muted-foreground mt-1">
+                        No images available
+                      </p>
+                    </div>
+                  </div>
+                )}
               </div>
 
               {/* Product Info */}

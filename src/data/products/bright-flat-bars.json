@@ -28,7 +28,7 @@
     "Medical equipment"
   ],
   "spec_pdf": "/specs/bright-flat-bars-specs.pdf",
-  "images": ["/products/bright-flat-bars-1.jpg", "/products/bright-flat-bars-2.jpg"],
+  "images": ["/products/brightflatbars1.png", "/products/brightflatbars2.png", "/products/brightflatbars3.png", "/products/brightflatbars4.png"],
   "availability": "In Stock",
   "min_order_qty": "500 KG",
   "price": "Request Quote"
