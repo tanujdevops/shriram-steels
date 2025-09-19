@@ -80,283 +80,318 @@ module.exports = {
           from: { height: "var(--radix-collapsible-content-height)" },
           to: { height: 0 },
         },
-        // Dynamic steel manufacturing animations
-        "steel-beam-fly": {
+        // Shriram Steels Manufacturing Story - Raw Steel to Premium Products
+        "raw-ingot-entry": {
           "0%": {
-            transform: "translate3d(-200px, 300px, 0) rotate(-45deg) scale(0.8)",
-            opacity: "0"
-          },
-          "20%": {
-            transform: "translate3d(-100px, 200px, 0) rotate(-35deg) scale(1)",
-            opacity: "0.8"
-          },
-          "80%": {
-            transform: "translate3d(400px, -100px, 0) rotate(-25deg) scale(1.1)",
-            opacity: "0.9"
-          },
-          "100%": {
-            transform: "translate3d(500px, -200px, 0) rotate(-15deg) scale(0.7)",
-            opacity: "0"
-          },
-        },
-        "steel-ring-rotate": {
-          "0%": {
-            transform: "rotate(0deg) scale(0.8)",
-            opacity: "0.6"
-          },
-          "50%": {
-            transform: "rotate(180deg) scale(1.1)",
-            opacity: "1"
-          },
-          "100%": {
-            transform: "rotate(360deg) scale(0.8)",
-            opacity: "0.6"
-          },
-        },
-        "steel-formation-1": {
-          "0%, 100%": {
-            transform: "translate3d(-100px, -50px, 0) rotate(0deg) scale(0.5)",
-            opacity: "0.3"
-          },
-          "33%": {
-            transform: "translate3d(0px, 50px, 0) rotate(120deg) scale(1)",
-            opacity: "0.8"
-          },
-          "66%": {
-            transform: "translate3d(100px, -50px, 0) rotate(240deg) scale(1)",
-            opacity: "0.8"
-          },
-        },
-        "steel-formation-2": {
-          "0%, 100%": {
-            transform: "translate3d(150px, 100px, 0) rotate(0deg) scale(0.6)",
-            opacity: "0.4"
-          },
-          "33%": {
-            transform: "translate3d(-50px, -100px, 0) rotate(120deg) scale(1.1)",
-            opacity: "0.9"
-          },
-          "66%": {
-            transform: "translate3d(-150px, 100px, 0) rotate(240deg) scale(1.1)",
-            opacity: "0.9"
-          },
-        },
-        "steel-formation-3": {
-          "0%, 100%": {
-            transform: "translate3d(0px, -150px, 0) rotate(0deg) scale(0.7)",
-            opacity: "0.5"
-          },
-          "50%": {
-            transform: "translate3d(0px, 150px, 0) rotate(180deg) scale(1.2)",
-            opacity: "1"
-          },
-        },
-        "steel-spark-1": {
-          "0%": {
-            transform: "translate3d(-300px, -200px, 0) scale(0)",
+            transform: "translate3d(-300px, 50%, 0) scale(0.8)",
             opacity: "0"
           },
           "10%": {
-            transform: "translate3d(-250px, -150px, 0) scale(1.5)",
-            opacity: "1"
-          },
-          "90%": {
-            transform: "translate3d(350px, 250px, 0) scale(0.3)",
-            opacity: "0.6"
-          },
-          "100%": {
-            transform: "translate3d(400px, 300px, 0) scale(0)",
-            opacity: "0"
-          },
-        },
-        "steel-spark-2": {
-          "0%": {
-            transform: "translate3d(300px, -100px, 0) scale(0)",
-            opacity: "0"
-          },
-          "15%": {
-            transform: "translate3d(250px, -50px, 0) scale(1.2)",
+            transform: "translate3d(-100px, 50%, 0) scale(1)",
             opacity: "0.8"
           },
-          "85%": {
-            transform: "translate3d(-350px, 150px, 0) scale(0.2)",
-            opacity: "0.4"
+          "25%": {
+            transform: "translate3d(20%, 50%, 0) scale(1.1)",
+            opacity: "1"
+          },
+          "40%": {
+            transform: "translate3d(40%, 50%, 0) scale(0.9)",
+            opacity: "0.7"
           },
           "100%": {
-            transform: "translate3d(-400px, 200px, 0) scale(0)",
+            transform: "translate3d(40%, 50%, 0) scale(0)",
             opacity: "0"
           },
         },
-        "steel-spark-3": {
-          "0%": {
-            transform: "translate3d(0px, -250px, 0) scale(0)",
+        "forge-heating": {
+          "0%, 15%": {
+            transform: "translate3d(25%, 60%, 0) scale(0)",
             opacity: "0"
           },
           "20%": {
-            transform: "translate3d(-50px, -200px, 0) scale(1.8)",
+            transform: "translate3d(25%, 60%, 0) scale(0.8)",
+            opacity: "0.6"
+          },
+          "45%": {
+            transform: "translate3d(25%, 60%, 0) scale(1.5)",
             opacity: "1"
           },
-          "80%": {
-            transform: "translate3d(200px, 300px, 0) scale(0.1)",
-            opacity: "0.3"
+          "55%": {
+            transform: "translate3d(25%, 60%, 0) scale(1.2)",
+            opacity: "0.8"
           },
           "100%": {
-            transform: "translate3d(250px, 350px, 0) scale(0)",
+            transform: "translate3d(25%, 60%, 0) scale(0)",
             opacity: "0"
           },
         },
-        "steel-spark-4": {
-          "0%": {
-            transform: "translate3d(-150px, 200px, 0) scale(0)",
+        "forging-spark-1": {
+          "0%, 30%": {
+            transform: "translate3d(30%, 55%, 0) scale(0)",
             opacity: "0"
           },
-          "25%": {
-            transform: "translate3d(-100px, 150px, 0) scale(1)",
-            opacity: "0.9"
-          },
-          "75%": {
-            transform: "translate3d(300px, -200px, 0) scale(0.4)",
-            opacity: "0.5"
-          },
-          "100%": {
-            transform: "translate3d(350px, -250px, 0) scale(0)",
-            opacity: "0"
-          },
-        },
-        "steel-spark-5": {
-          "0%": {
-            transform: "translate3d(200px, 300px, 0) scale(0)",
-            opacity: "0"
-          },
-          "30%": {
-            transform: "translate3d(150px, 250px, 0) scale(1.3)",
+          "35%": {
+            transform: "translate3d(15%, 40%, 0) scale(1.5)",
             opacity: "1"
           },
-          "70%": {
-            transform: "translate3d(-300px, -150px, 0) scale(0.2)",
+          "60%": {
+            transform: "translate3d(-50px, 20%, 0) scale(0.3)",
             opacity: "0.4"
           },
           "100%": {
-            transform: "translate3d(-350px, -200px, 0) scale(0)",
+            transform: "translate3d(-100px, 10%, 0) scale(0)",
             opacity: "0"
           },
         },
-        "steel-hex-build": {
-          "0%, 100%": {
-            transform: "translate3d(-200px, 100px, 0) rotate(0deg) scale(0.3)",
-            opacity: "0.2"
-          },
-          "25%": {
-            transform: "translate3d(-100px, 50px, 0) rotate(90deg) scale(0.8)",
-            opacity: "0.6"
-          },
-          "50%": {
-            transform: "translate3d(100px, 50px, 0) rotate(180deg) scale(1.2)",
-            opacity: "1"
-          },
-          "75%": {
-            transform: "translate3d(200px, 100px, 0) rotate(270deg) scale(0.8)",
-            opacity: "0.6"
-          },
-        },
-        "steel-plate-slide-1": {
-          "0%": {
-            transform: "translate3d(-400px, 80px, 0) rotate(0deg)",
+        "forging-spark-2": {
+          "0%, 32%": {
+            transform: "translate3d(35%, 65%, 0) scale(0)",
             opacity: "0"
           },
-          "30%": {
-            transform: "translate3d(-100px, 60px, 0) rotate(5deg)",
-            opacity: "0.8"
-          },
-          "70%": {
-            transform: "translate3d(300px, 40px, 0) rotate(-5deg)",
-            opacity: "0.8"
-          },
-          "100%": {
-            transform: "translate3d(500px, 20px, 0) rotate(0deg)",
-            opacity: "0"
-          },
-        },
-        "steel-plate-slide-2": {
-          "0%": {
-            transform: "translate3d(400px, -80px, 0) rotate(0deg)",
-            opacity: "0"
-          },
-          "30%": {
-            transform: "translate3d(100px, -60px, 0) rotate(-3deg)",
+          "38%": {
+            transform: "translate3d(50%, 80%, 0) scale(1.2)",
             opacity: "0.9"
           },
-          "70%": {
-            transform: "translate3d(-300px, -40px, 0) rotate(3deg)",
-            opacity: "0.9"
-          },
-          "100%": {
-            transform: "translate3d(-500px, -20px, 0) rotate(0deg)",
-            opacity: "0"
-          },
-        },
-        "steel-orbit-1": {
-          "0%": {
-            transform: "translate3d(150px, 0px, 0) rotate(0deg)",
-            opacity: "0.5"
-          },
-          "25%": {
-            transform: "translate3d(0px, -150px, 0) rotate(90deg)",
-            opacity: "1"
-          },
-          "50%": {
-            transform: "translate3d(-150px, 0px, 0) rotate(180deg)",
-            opacity: "1"
-          },
-          "75%": {
-            transform: "translate3d(0px, 150px, 0) rotate(270deg)",
-            opacity: "1"
-          },
-          "100%": {
-            transform: "translate3d(150px, 0px, 0) rotate(360deg)",
-            opacity: "0.5"
-          },
-        },
-        "steel-orbit-2": {
-          "0%": {
-            transform: "translate3d(-120px, 0px, 0) rotate(0deg)",
-            opacity: "0.6"
-          },
-          "25%": {
-            transform: "translate3d(0px, 120px, 0) rotate(-90deg)",
-            opacity: "1"
-          },
-          "50%": {
-            transform: "translate3d(120px, 0px, 0) rotate(-180deg)",
-            opacity: "1"
-          },
-          "75%": {
-            transform: "translate3d(0px, -120px, 0) rotate(-270deg)",
-            opacity: "1"
-          },
-          "100%": {
-            transform: "translate3d(-120px, 0px, 0) rotate(-360deg)",
-            opacity: "0.6"
-          },
-        },
-        "heat-wave-1": {
-          "0%, 100%": {
-            transform: "translateX(-100%) scaleY(0.5)",
+          "65%": {
+            transform: "translate3d(80%, 100%, 0) scale(0.2)",
             opacity: "0.3"
           },
-          "50%": {
-            transform: "translateX(100%) scaleY(1.5)",
-            opacity: "0.8"
+          "100%": {
+            transform: "translate3d(100%, 120%, 0) scale(0)",
+            opacity: "0"
           },
         },
-        "heat-wave-2": {
-          "0%, 100%": {
-            transform: "translateX(100%) scaleY(0.8)",
+        "forging-spark-3": {
+          "0%, 34%": {
+            transform: "translate3d(20%, 45%, 0) scale(0)",
+            opacity: "0"
+          },
+          "40%": {
+            transform: "translate3d(60%, 25%, 0) scale(1.8)",
+            opacity: "1"
+          },
+          "70%": {
+            transform: "translate3d(90%, 5%, 0) scale(0.1)",
             opacity: "0.2"
           },
+          "100%": {
+            transform: "translate3d(110%, -10%, 0) scale(0)",
+            opacity: "0"
+          },
+        },
+        // Product Formation Sequences - The 6 Premium Products
+        "product-black-bar": {
+          "0%, 45%": {
+            transform: "translate3d(50%, 45%, 0) scale(0) rotate(0deg)",
+            opacity: "0"
+          },
           "50%": {
-            transform: "translateX(-100%) scaleY(1.2)",
+            transform: "translate3d(15%, 25%, 0) scale(0.8) rotate(15deg)",
+            opacity: "0.7"
+          },
+          "65%": {
+            transform: "translate3d(15%, 25%, 0) scale(1) rotate(0deg)",
+            opacity: "1"
+          },
+          "85%": {
+            transform: "translate3d(15%, 25%, 0) scale(1) rotate(0deg)",
+            opacity: "1"
+          },
+          "100%": {
+            transform: "translate3d(15%, 25%, 0) scale(0.8) rotate(0deg)",
             opacity: "0.6"
+          },
+        },
+        "product-round-bar": {
+          "0%, 50%": {
+            transform: "translate3d(50%, 45%, 0) scale(0) rotate(0deg)",
+            opacity: "0"
+          },
+          "55%": {
+            transform: "translate3d(35%, 25%, 0) scale(0.8) rotate(-10deg)",
+            opacity: "0.7"
+          },
+          "70%": {
+            transform: "translate3d(35%, 25%, 0) scale(1) rotate(0deg)",
+            opacity: "1"
+          },
+          "85%": {
+            transform: "translate3d(35%, 25%, 0) scale(1) rotate(0deg)",
+            opacity: "1"
+          },
+          "100%": {
+            transform: "translate3d(35%, 25%, 0) scale(0.8) rotate(0deg)",
+            opacity: "0.6"
+          },
+        },
+        "product-flat-bar": {
+          "0%, 55%": {
+            transform: "translate3d(50%, 45%, 0) scale(0) rotate(0deg)",
+            opacity: "0"
+          },
+          "60%": {
+            transform: "translate3d(55%, 25%, 0) scale(0.8) rotate(90deg)",
+            opacity: "0.7"
+          },
+          "75%": {
+            transform: "translate3d(55%, 25%, 0) scale(1) rotate(90deg)",
+            opacity: "1"
+          },
+          "85%": {
+            transform: "translate3d(55%, 25%, 0) scale(1) rotate(90deg)",
+            opacity: "1"
+          },
+          "100%": {
+            transform: "translate3d(55%, 25%, 0) scale(0.8) rotate(90deg)",
+            opacity: "0.6"
+          },
+        },
+        "product-hex-bar": {
+          "0%, 60%": {
+            transform: "translate3d(50%, 45%, 0) scale(0) rotate(0deg)",
+            opacity: "0"
+          },
+          "65%": {
+            transform: "translate3d(75%, 25%, 0) scale(0.8) rotate(30deg)",
+            opacity: "0.7"
+          },
+          "80%": {
+            transform: "translate3d(75%, 25%, 0) scale(1) rotate(0deg)",
+            opacity: "1"
+          },
+          "85%": {
+            transform: "translate3d(75%, 25%, 0) scale(1) rotate(0deg)",
+            opacity: "1"
+          },
+          "100%": {
+            transform: "translate3d(75%, 25%, 0) scale(0.8) rotate(0deg)",
+            opacity: "0.6"
+          },
+        },
+        "product-square-bar": {
+          "0%, 65%": {
+            transform: "translate3d(50%, 45%, 0) scale(0) rotate(0deg)",
+            opacity: "0"
+          },
+          "70%": {
+            transform: "translate3d(15%, 65%, 0) scale(0.8) rotate(45deg)",
+            opacity: "0.7"
+          },
+          "85%": {
+            transform: "translate3d(15%, 65%, 0) scale(1) rotate(0deg)",
+            opacity: "1"
+          },
+          "90%": {
+            transform: "translate3d(15%, 65%, 0) scale(1) rotate(0deg)",
+            opacity: "1"
+          },
+          "100%": {
+            transform: "translate3d(15%, 65%, 0) scale(0.8) rotate(0deg)",
+            opacity: "0.6"
+          },
+        },
+        "product-alloy-steel": {
+          "0%, 70%": {
+            transform: "translate3d(50%, 45%, 0) scale(0) rotate(0deg)",
+            opacity: "0"
+          },
+          "75%": {
+            transform: "translate3d(35%, 65%, 0) scale(0.8) rotate(-20deg)",
+            opacity: "0.8"
+          },
+          "90%": {
+            transform: "translate3d(35%, 65%, 0) scale(1.1) rotate(0deg)",
+            opacity: "1"
+          },
+          "95%": {
+            transform: "translate3d(35%, 65%, 0) scale(1.1) rotate(0deg)",
+            opacity: "1"
+          },
+          "100%": {
+            transform: "translate3d(35%, 65%, 0) scale(0.9) rotate(0deg)",
+            opacity: "0.7"
+          },
+        },
+        "quality-scanner": {
+          "0%, 80%": {
+            transform: "translateX(-100%)",
+            opacity: "0"
+          },
+          "85%": {
+            transform: "translateX(0%)",
+            opacity: "0.8"
+          },
+          "95%": {
+            transform: "translateX(100%)",
+            opacity: "0.6"
+          },
+          "100%": {
+            transform: "translateX(200%)",
+            opacity: "0"
+          },
+        },
+        "polish-shine-1": {
+          "0%, 85%": {
+            transform: "translate3d(10%, -100%, 0) rotate(-45deg)",
+            opacity: "0"
+          },
+          "90%": {
+            transform: "translate3d(20%, 50%, 0) rotate(-45deg)",
+            opacity: "0.9"
+          },
+          "95%": {
+            transform: "translate3d(30%, 150%, 0) rotate(-45deg)",
+            opacity: "0.6"
+          },
+          "100%": {
+            transform: "translate3d(40%, 200%, 0) rotate(-45deg)",
+            opacity: "0"
+          },
+        },
+        "polish-shine-2": {
+          "0%, 87%": {
+            transform: "translate3d(60%, -100%, 0) rotate(-45deg)",
+            opacity: "0"
+          },
+          "92%": {
+            transform: "translate3d(70%, 50%, 0) rotate(-45deg)",
+            opacity: "0.8"
+          },
+          "97%": {
+            transform: "translate3d(80%, 150%, 0) rotate(-45deg)",
+            opacity: "0.5"
+          },
+          "100%": {
+            transform: "translate3d(90%, 200%, 0) rotate(-45deg)",
+            opacity: "0"
+          },
+        },
+        "final-assembly": {
+          "0%, 90%": {
+            transform: "translate3d(50%, 50%, 0) scale(0)",
+            opacity: "0"
+          },
+          "95%": {
+            transform: "translate3d(50%, 50%, 0) scale(1.2)",
+            opacity: "0.8"
+          },
+          "100%": {
+            transform: "translate3d(50%, 50%, 0) scale(1)",
+            opacity: "0.6"
+          },
+        },
+        "production-cycle": {
+          "0%": {
+            transform: "translateX(-100%) translateY(90%)",
+            opacity: "0.4"
+          },
+          "50%": {
+            transform: "translateX(0%) translateY(90%)",
+            opacity: "0.8"
+          },
+          "100%": {
+            transform: "translateX(100%) translateY(90%)",
+            opacity: "0.4"
           },
         },
         "spin-slow": {
@@ -373,24 +408,25 @@ module.exports = {
         "accordion-up": "accordion-up 0.2s ease-out",
         "collapsible-down": "collapsible-down 0.2s ease-in-out",
         "collapsible-up": "collapsible-up 0.2s ease-in-out",
-        // Dynamic steel manufacturing animations
-        "steel-beam-fly": "steel-beam-fly 12s linear infinite",
-        "steel-ring-rotate": "steel-ring-rotate 8s ease-in-out infinite",
-        "steel-formation-1": "steel-formation-1 15s ease-in-out infinite",
-        "steel-formation-2": "steel-formation-2 18s ease-in-out infinite 2s",
-        "steel-formation-3": "steel-formation-3 10s ease-in-out infinite 1s",
-        "steel-spark-1": "steel-spark-1 6s linear infinite",
-        "steel-spark-2": "steel-spark-2 7s linear infinite 1s",
-        "steel-spark-3": "steel-spark-3 5s linear infinite 2s",
-        "steel-spark-4": "steel-spark-4 8s linear infinite 3s",
-        "steel-spark-5": "steel-spark-5 6s linear infinite 4s",
-        "steel-hex-build": "steel-hex-build 20s ease-in-out infinite",
-        "steel-plate-slide-1": "steel-plate-slide-1 14s linear infinite",
-        "steel-plate-slide-2": "steel-plate-slide-2 16s linear infinite 3s",
-        "steel-orbit-1": "steel-orbit-1 12s linear infinite",
-        "steel-orbit-2": "steel-orbit-2 10s linear infinite 2s",
-        "heat-wave-1": "heat-wave-1 4s ease-in-out infinite",
-        "heat-wave-2": "heat-wave-2 5s ease-in-out infinite 1s",
+        // Shriram Steels Manufacturing Story - Meaningful Product Journey
+        "raw-ingot-entry": "raw-ingot-entry 20s ease-in-out infinite",
+        "forge-heating": "forge-heating 20s ease-in-out infinite",
+        "forging-spark-1": "forging-spark-1 20s linear infinite",
+        "forging-spark-2": "forging-spark-2 20s linear infinite 0.5s",
+        "forging-spark-3": "forging-spark-3 20s linear infinite 1s",
+        // The 6 Premium Products Formation
+        "product-black-bar": "product-black-bar 20s ease-in-out infinite",
+        "product-round-bar": "product-round-bar 20s ease-in-out infinite",
+        "product-flat-bar": "product-flat-bar 20s ease-in-out infinite",
+        "product-hex-bar": "product-hex-bar 20s ease-in-out infinite",
+        "product-square-bar": "product-square-bar 20s ease-in-out infinite",
+        "product-alloy-steel": "product-alloy-steel 20s ease-in-out infinite",
+        // Quality & Finishing Process
+        "quality-scanner": "quality-scanner 20s ease-in-out infinite",
+        "polish-shine-1": "polish-shine-1 20s linear infinite",
+        "polish-shine-2": "polish-shine-2 20s linear infinite 0.5s",
+        "final-assembly": "final-assembly 20s ease-in-out infinite",
+        "production-cycle": "production-cycle 20s linear infinite",
         "spin-slow": "spin-slow 30s linear infinite",
         "pulse-slow": "pulse-slow 3s ease-in-out infinite",
       },

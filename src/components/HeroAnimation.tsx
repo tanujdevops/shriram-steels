@@ -5,90 +5,97 @@ const HeroAnimation: React.FC = () => {
     <div
       className="relative w-full h-[500px] md:h-[600px] lg:h-[700px] overflow-hidden"
       role="img"
-      aria-label="Dynamic steel manufacturing animation"
+      aria-label="Shriram Steels manufacturing process - from raw steel to premium products"
     >
-      {/* Ambient glow layers - no containers, pure atmosphere */}
-      <div className="absolute inset-0 bg-gradient-radial from-primary/10 via-transparent to-transparent"></div>
-      <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-[120%] h-[120%] bg-gradient-conic from-primary/5 via-transparent to-secondary/5 animate-spin-slow"></div>
+      {/* Industrial forge atmosphere */}
+      <div className="absolute inset-0 bg-gradient-radial from-orange-500/5 via-primary/5 to-transparent"></div>
+      <div className="absolute inset-0 bg-gradient-to-r from-transparent via-primary/3 to-transparent animate-pulse-slow"></div>
 
-      {/* Main steel manufacturing scene */}
+      {/* Main manufacturing story */}
       <div className="relative w-full h-full">
 
-        {/* Large Steel Beam - Flying diagonally across screen */}
-        <div className="absolute animate-steel-beam-fly will-change-transform" style={{ transform: 'translateZ(0)' }}>
-          <div className="steel-beam-large w-2 h-64 md:w-3 md:h-80 lg:w-4 lg:h-96"></div>
+        {/* Stage 1: Raw Steel Ingot Entry */}
+        <div className="absolute animate-raw-ingot-entry will-change-transform" style={{ transform: 'translateZ(0)' }}>
+          <div className="raw-steel-ingot w-8 h-20 md:w-12 md:h-28 lg:w-16 lg:h-36"></div>
         </div>
 
-        {/* Rotating Steel Ring - Central focal element */}
-        <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 animate-steel-ring-rotate will-change-transform">
-          <div className="steel-ring w-32 h-32 md:w-48 md:h-48 lg:w-64 lg:h-64"></div>
+        {/* Stage 2: Heating Process - Forge Fire */}
+        <div className="absolute animate-forge-heating will-change-transform">
+          <div className="forge-fire w-16 h-8 md:w-24 md:h-12 lg:w-32 lg:h-16"></div>
         </div>
 
-        {/* Multiple steel rods forming geometric patterns */}
-        <div className="absolute animate-steel-formation-1 will-change-transform" style={{ transform: 'translateZ(0)' }}>
-          <div className="steel-rod-thin w-1 h-24 md:w-1.5 md:h-32 lg:w-2 lg:h-40"></div>
+        {/* Stage 3: Manufacturing Sparks - Quality Forging */}
+        <div className="absolute animate-forging-spark-1 will-change-transform">
+          <div className="forging-spark w-1 h-1 md:w-2 md:h-2 lg:w-3 lg:h-3"></div>
+        </div>
+        <div className="absolute animate-forging-spark-2 will-change-transform">
+          <div className="forging-spark w-0.5 h-0.5 md:w-1 md:h-1 lg:w-2 lg:h-2"></div>
+        </div>
+        <div className="absolute animate-forging-spark-3 will-change-transform">
+          <div className="forging-spark w-1.5 h-1.5 md:w-2.5 md:h-2.5 lg:w-3.5 lg:h-3.5"></div>
         </div>
 
-        <div className="absolute animate-steel-formation-2 will-change-transform" style={{ transform: 'translateZ(0)' }}>
-          <div className="steel-rod-thin w-1 h-24 md:w-1.5 md:h-32 lg:w-2 lg:h-40"></div>
+        {/* Stage 4: Product Formation - The 6 Premium Products */}
+
+        {/* Black Bars */}
+        <div className="absolute animate-product-black-bar will-change-transform" style={{ transform: 'translateZ(0)' }}>
+          <div className="product-black-bar w-3 h-16 md:w-4 md:h-24 lg:w-5 lg:h-32"></div>
         </div>
 
-        <div className="absolute animate-steel-formation-3 will-change-transform" style={{ transform: 'translateZ(0)' }}>
-          <div className="steel-rod-thin w-1 h-24 md:w-1.5 md:h-32 lg:w-2 lg:h-40"></div>
+        {/* Bright Round Bars */}
+        <div className="absolute animate-product-round-bar will-change-transform" style={{ transform: 'translateZ(0)' }}>
+          <div className="product-round-bar w-3 h-16 md:w-4 md:h-24 lg:w-5 lg:h-32"></div>
         </div>
 
-        {/* Steel particles - welding sparks effect */}
-        <div className="absolute animate-steel-spark-1 will-change-transform">
-          <div className="steel-spark w-1 h-1 md:w-1.5 md:h-1.5 lg:w-2 lg:h-2"></div>
-        </div>
-        <div className="absolute animate-steel-spark-2 will-change-transform">
-          <div className="steel-spark w-0.5 h-0.5 md:w-1 md:h-1 lg:w-1.5 lg:h-1.5"></div>
-        </div>
-        <div className="absolute animate-steel-spark-3 will-change-transform">
-          <div className="steel-spark w-1.5 h-1.5 md:w-2 md:h-2 lg:w-2.5 lg:h-2.5"></div>
-        </div>
-        <div className="absolute animate-steel-spark-4 will-change-transform">
-          <div className="steel-spark w-0.5 h-0.5 md:w-0.5 md:h-0.5 lg:w-1 lg:h-1"></div>
-        </div>
-        <div className="absolute animate-steel-spark-5 will-change-transform">
-          <div className="steel-spark w-1 h-1 md:w-1.5 md:h-1.5 lg:w-2 lg:h-2"></div>
+        {/* Bright Flat Bars */}
+        <div className="absolute animate-product-flat-bar will-change-transform" style={{ transform: 'translateZ(0)' }}>
+          <div className="product-flat-bar w-8 h-2 md:w-12 md:h-3 lg:w-16 lg:h-4"></div>
         </div>
 
-        {/* Hexagonal steel structure - building/assembling effect */}
-        <div className="absolute animate-steel-hex-build will-change-transform" style={{ transform: 'translateZ(0)' }}>
-          <div className="steel-hex-structure w-8 h-8 md:w-12 md:h-12 lg:w-16 lg:h-16"></div>
+        {/* Bright Hex Bars */}
+        <div className="absolute animate-product-hex-bar will-change-transform" style={{ transform: 'translateZ(0)' }}>
+          <div className="product-hex-bar w-4 h-16 md:w-6 md:h-24 lg:w-8 lg:h-32"></div>
         </div>
 
-        {/* Steel plates - sliding and stacking */}
-        <div className="absolute animate-steel-plate-slide-1 will-change-transform">
-          <div className="steel-plate w-16 h-3 md:w-24 md:h-4 lg:w-32 lg:h-5"></div>
-        </div>
-        <div className="absolute animate-steel-plate-slide-2 will-change-transform">
-          <div className="steel-plate w-20 h-3 md:w-28 md:h-4 lg:w-36 lg:h-5"></div>
+        {/* Bright Square Bars */}
+        <div className="absolute animate-product-square-bar will-change-transform" style={{ transform: 'translateZ(0)' }}>
+          <div className="product-square-bar w-4 h-16 md:w-6 md:h-24 lg:w-8 lg:h-32"></div>
         </div>
 
-        {/* Orbital steel elements - creating dynamic movement */}
-        <div className="absolute animate-steel-orbit-1 will-change-transform" style={{ transform: 'translateZ(0)' }}>
-          <div className="steel-rod-medium w-1.5 h-12 md:w-2 md:h-16 lg:w-2.5 lg:h-20"></div>
-        </div>
-        <div className="absolute animate-steel-orbit-2 will-change-transform" style={{ transform: 'translateZ(0)' }}>
-          <div className="steel-rod-medium w-1.5 h-12 md:w-2 md:h-16 lg:w-2.5 lg:h-20"></div>
+        {/* Alloy Steel */}
+        <div className="absolute animate-product-alloy-steel will-change-transform" style={{ transform: 'translateZ(0)' }}>
+          <div className="product-alloy-steel w-3 h-18 md:w-4 md:h-26 lg:w-5 lg:h-34"></div>
         </div>
 
-        {/* Heat/energy waves - representing steel forging */}
-        <div className="absolute animate-heat-wave-1 will-change-transform">
-          <div className="heat-wave w-full h-1 md:h-1.5 lg:h-2"></div>
+        {/* Stage 5: Quality Control - Precision Inspection */}
+        <div className="absolute animate-quality-scanner will-change-transform">
+          <div className="quality-scanner w-1 h-full"></div>
         </div>
-        <div className="absolute animate-heat-wave-2 will-change-transform">
-          <div className="heat-wave w-full h-1 md:h-1.5 lg:h-2"></div>
+
+        {/* Stage 6: Premium Finish - Polishing Effect */}
+        <div className="absolute animate-polish-shine-1 will-change-transform">
+          <div className="polish-shine w-2 h-20 md:w-3 md:h-30 lg:w-4 lg:h-40"></div>
+        </div>
+        <div className="absolute animate-polish-shine-2 will-change-transform">
+          <div className="polish-shine w-2 h-20 md:w-3 md:h-30 lg:w-4 lg:h-40"></div>
+        </div>
+
+        {/* Stage 7: Final Product Assembly - Showcase Formation */}
+        <div className="absolute animate-final-assembly will-change-transform">
+          <div className="assembly-glow w-32 h-32 md:w-48 md:h-48 lg:w-64 lg:h-64"></div>
+        </div>
+
+        {/* Continuous Production Cycle Indicator */}
+        <div className="absolute animate-production-cycle will-change-transform">
+          <div className="cycle-indicator w-full h-0.5 md:h-1 lg:h-1.5"></div>
         </div>
       </div>
 
-      {/* Seamless edge blending - no visible containers */}
-      <div className="absolute inset-0 pointer-events-none bg-gradient-to-t from-background/30 via-transparent to-transparent"></div>
-      <div className="absolute inset-0 pointer-events-none bg-gradient-to-b from-background/20 via-transparent to-background/40"></div>
+      {/* Seamless integration with background */}
+      <div className="absolute inset-0 pointer-events-none bg-gradient-to-t from-background/20 via-transparent to-transparent"></div>
+      <div className="absolute inset-0 pointer-events-none bg-gradient-to-b from-background/10 via-transparent to-background/30"></div>
 
-      {/* Reduce motion support */}
+      {/* Accessibility */}
       <style jsx>{`
         @media (prefers-reduced-motion: reduce) {
           [class*="animate-"] {
