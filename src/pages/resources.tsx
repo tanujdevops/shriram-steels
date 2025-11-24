@@ -58,7 +58,7 @@ export default function ResourcesPage() {
     },
     {
       title: "Quality Standards & Testing",
-      description: "Overview of quality control processes, testing procedures, and certification standards followed at Shriram Steels.",
+      description: "Overview of quality control processes, testing procedures, and certification standards followed at Shriram Steels & Shriram Industries.",
       category: "Quality Documentation", 
       filename: "quality-standards.pdf",
       path: "/specs/quality-standards.pdf",
@@ -82,9 +82,9 @@ export default function ResourcesPage() {
   return (
     <>
       <Head>
-        <title>Technical Resources & Specifications - Steel Product Documentation | Shriram Steels</title>
-        <meta name="description" content="Download technical specifications, product catalogs, and grade charts for steel bars from Shriram Steels. Complete documentation for informed decision making." />
-        <meta name="keywords" content="steel specifications, technical documentation, product catalogs, grade charts, steel properties, application guides, material data sheets" />
+        <title>Technical Resources & Specifications - Steel Product Documentation | Shriram Steels & Shriram Industries</title>
+        <meta name="description" content="Download technical specifications, product catalogs, and grade charts for steel bars from Shriram Steels & Shriram Industries. Complete documentation for informed decision making." />
+        <meta name="keywords" content="steel specifications, technical documentation, product catalogs, grade charts, steel properties, application guides, material data sheets, Shriram Steels, Shriram Industries" />
         <link rel="icon" href="/favicon.ico" />
         <link rel="icon" type="image/png" sizes="32x32" href="/shriram-steels.png" />
       </Head>
@@ -388,7 +388,7 @@ export default function ResourcesPage() {
               </div>
             </div>
             <div className="border-t mt-8 pt-8 text-center text-sm text-muted-foreground">
-              <p>&copy; 2024 Shriram Steels. All rights reserved.</p>
+              <p>&copy; 2024 Shriram Steels & Shriram Industries. All rights reserved.</p>
             </div>
           </div>
         </footer>

@@ -131,14 +131,14 @@ Please share your current rates and availability. Thank you!`;
   return (
     <>
       <Head>
-        <title>{product.name} - {product.meta_description.split('.')[0]} | Shriram Steels</title>
+        <title>{product.name} - {product.meta_description.split('.')[0]} | Shriram Steels & Shriram Industries</title>
         <meta name="description" content={product.meta_description} />
-        <meta name="keywords" content={`${product.name.toLowerCase()}, ${product.grades.join(', ')}, steel bars, Shriram Steels, Kolhapur`} />
+        <meta name="keywords" content={`${product.name.toLowerCase()}, ${product.grades.join(', ')}, steel bars, Shriram Steels, Shriram Industries, Kolhapur`} />
         <link rel="icon" href="/favicon.ico" />
         <link rel="icon" type="image/png" sizes="32x32" href="/shriram-steels.png" />
         
         {/* Open Graph */}
-        <meta property="og:title" content={`${product.name} - Premium Steel Products | Shriram Steels`} />
+        <meta property="og:title" content={`${product.name} - Premium Steel Products | Shriram Steels & Shriram Industries`} />
         <meta property="og:description" content={product.meta_description} />
         <meta property="og:type" content="product" />
         <meta property="og:image" content={`https://shriramsteels.com${product.images[0]}`} />
@@ -154,11 +154,13 @@ Please share your current rates and availability. Thank you!`;
               "description": product.short_description,
               "brand": {
                 "@type": "Brand",
-                "name": "Shriram Steels"
+                "name": "Shriram Steels & Shriram Industries",
+                "alternateName": ["Shriram Steels", "Shriram Industries"]
               },
               "manufacturer": {
                 "@type": "Organization",
-                "name": "Shriram Steels",
+                "name": "Shriram Steels & Shriram Industries",
+                "alternateName": ["Shriram Steels", "Shriram Industries"],
                 "address": {
                   "@type": "PostalAddress",
                   "streetAddress": "Plot No. E-66, Shriram Industries, M.I.D.C., Shiroli",
@@ -633,7 +635,7 @@ Please share your current rates and availability. Thank you!`;
               </div>
             </div>
             <div className="border-t mt-8 pt-8 text-center text-sm text-muted-foreground">
-              <p>&copy; 2024 Shriram Steels. All rights reserved.</p>
+              <p>&copy; 2024 Shriram Steels & Shriram Industries. All rights reserved.</p>
             </div>
           </div>
         </footer>

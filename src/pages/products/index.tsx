@@ -44,9 +44,9 @@ export default function ProductsPage({ products, allGrades }: ProductsPageProps)
   return (
     <>
       <Head>
-        <title>Steel Products - Bars, Rods & Alloy Steel | Shriram Steels Kolhapur</title>
-        <meta name="description" content="Browse our complete range of steel products: black bars, bright bars, alloy steel rods, and structural steel sections. EN8, EN19, SS304, SS316, IS 2062 grades in stock. Get instant quotes." />
-        <meta name="keywords" content="steel products, black bars, bright bars, alloy steel, structural steel, EN8, EN19, SS304, SS316, IS 2062, steel rods, Kolhapur" />
+        <title>Steel Products - Bars, Rods & Alloy Steel | Shriram Steels & Shriram Industries Kolhapur</title>
+        <meta name="description" content="Browse the complete range from Shriram Steels & Shriram Industries: black bars, bright bars, alloy steel rods, and structural steel sections. EN8, EN19, SS304, SS316, IS 2062 grades in stock with instant quotes." />
+        <meta name="keywords" content="steel products, black bars, bright bars, alloy steel, structural steel, EN8, EN19, SS304, SS316, IS 2062, steel rods, Kolhapur, Shriram Steels, Shriram Industries" />
         <link rel="icon" href="/favicon.ico" />
         <link rel="icon" type="image/png" sizes="32x32" href="/shriram-steels.png" />
       </Head>
@@ -277,7 +277,7 @@ export default function ProductsPage({ products, allGrades }: ProductsPageProps)
               </div>
             </div>
             <div className="border-t mt-8 pt-8 text-center text-sm text-muted-foreground">
-              <p>&copy; 2024 Shriram Steels. All rights reserved.</p>
+              <p>&copy; 2024 Shriram Steels & Shriram Industries. All rights reserved.</p>
             </div>
           </div>
         </footer>

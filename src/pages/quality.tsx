@@ -30,9 +30,9 @@ export default function QualityPage() {
   return (
     <>
       <Head>
-        <title>Quality Assurance - MTR, Testing & Certifications | Shriram Steels</title>
-        <meta name="description" content="Comprehensive quality control at Shriram Steels. Material Test Reports, chemical analysis, mechanical testing for all steel products. ISO standards compliance." />
-        <meta name="keywords" content="steel quality control, Material Test Reports, MTR, steel testing, chemical analysis, mechanical testing, quality certification, ISO standards" />
+        <title>Quality Assurance - MTR, Testing & Certifications | Shriram Steels & Shriram Industries</title>
+        <meta name="description" content="Comprehensive quality control at Shriram Steels & Shriram Industries. Material Test Reports, chemical analysis, mechanical testing for all steel products. ISO standards compliance." />
+        <meta name="keywords" content="steel quality control, Material Test Reports, MTR, steel testing, chemical analysis, mechanical testing, quality certification, ISO standards, Shriram Steels, Shriram Industries" />
         <link rel="icon" href="/favicon.ico" />
         <link rel="icon" type="image/png" sizes="32x32" href="/shriram-steels.png" />
       </Head>
@@ -517,7 +517,7 @@ export default function QualityPage() {
               </div>
             </div>
             <div className="border-t mt-8 pt-8 text-center text-sm text-muted-foreground">
-              <p>&copy; 2024 Shriram Steels. All rights reserved.</p>
+              <p>&copy; 2024 Shriram Steels & Shriram Industries. All rights reserved.</p>
             </div>
           </div>
         </footer>
