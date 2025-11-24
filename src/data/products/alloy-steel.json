@@ -3,7 +3,7 @@
   "name": "Alloy Steel",
   "short_description": "Premium alloy steel bars and rods for high-strength applications and critical components.",
   "meta_description": "High-grade alloy steel bars & rods for demanding applications. EN series, AISI grades available. Get quotes from Shriram Steels.",
-  "grades": ["EN19", "EN24", "EN31", "EN353", "4140", "4340", "8620"],
+  "grades": ["EN19", "EN24", "EN31", "EN353", "4140", "4340", "8620", "16MNCR5", "20MNCR5"],
   "sizes": [
     "20mm dia x 3m",
     "32mm dia x 6m",
@@ -28,7 +28,7 @@
     "Aerospace applications"
   ],
   "spec_pdf": "/specs/alloy-steel-specs.pdf",
-  "images": ["/products/alloysteel1.png"],
+  "images": ["/products/alloysteel1.png", "/products/alloysteel2.png"],
   "availability": "In Stock",
   "min_order_qty": "1 MT",
   "price": "Request Quote"

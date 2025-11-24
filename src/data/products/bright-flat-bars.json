@@ -3,7 +3,7 @@
   "name": "Bright Flat Bars",
   "short_description": "Precision bright flat bars with excellent surface finish for engineering applications.",
   "meta_description": "High precision bright flat bars with superior surface finish. Multiple grades available. Get competitive quotes from Shriram Steels.",
-  "grades": ["EN8", "EN19", "C45", "SS304", "SS316"],
+  "grades": ["MS", "1018", "1010", "EN1A", "EN8", "EN8D", "EN19", "C45", "CK45", "4140", "16MNCR5", "20MNCR5", "EN31", "SS304", "SS316"],
   "sizes": [
     "10mm x 25mm x 3m",
     "15mm x 50mm x 6m",

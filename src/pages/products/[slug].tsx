@@ -580,16 +580,29 @@ Please share your current rates and availability. Thank you!`;
         <footer className="border-t py-12">
           <div className="container mx-auto px-4">
             <div className="grid md:grid-cols-4 gap-8">
-              <div>
-                <Image
-                  src="/shriram-steels.png"
-                  alt="Shriram Steels"
-                  width={120}
-                  height={36}
-                  className="mb-4"
-                />
+              <div className="space-y-3">
+                <div className="flex items-center gap-3">
+                  <div className="rounded-md bg-white/90 px-2 py-1 shadow-sm">
+                    <Image
+                      src="/shriram-steels.png"
+                      alt="Shriram Steels"
+                      width={120}
+                      height={36}
+                      className="h-9 w-auto"
+                    />
+                  </div>
+                  <div className="rounded-md bg-white/90 px-2 py-1 shadow-sm">
+                    <Image
+                      src="/shriram-industries.jpeg"
+                      alt="Shriram Industries"
+                      width={120}
+                      height={36}
+                      className="h-9 w-auto"
+                    />
+                  </div>
+                </div>
                 <p className="text-sm text-muted-foreground">
-                  Leading steel manufacturer in Kolhapur, Maharashtra. Quality products with competitive pricing.
+                  Shriram Steels & Shriram Industries - leading steel manufacturers in Kolhapur, Maharashtra with quality products and competitive pricing.
                 </p>
               </div>
               <div>
@@ -598,6 +611,7 @@ Please share your current rates and availability. Thank you!`;
                   <li><Link href="/products/black-bars">Black Bars</Link></li>
                   <li><Link href="/products/bright-round-bars">Bright Round Bars</Link></li>
                   <li><Link href="/products/alloy-steel">Alloy Steel</Link></li>
+                  <li><Link href="/products/structural-steel">Structural Steel</Link></li>
                 </ul>
               </div>
               <div>
@@ -723,7 +737,8 @@ export const getStaticPaths: GetStaticPaths = async () => {
     'bright-hex-bars',
     'bright-round-bars',
     'bright-square-bars',
-    'alloy-steel'
+    'alloy-steel',
+    'structural-steel'
   ];
 
   const paths = productSlugs.map((slug) => ({

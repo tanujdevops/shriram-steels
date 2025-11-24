@@ -301,7 +301,8 @@ export default function ResourcesPage() {
                 { name: 'Bright Flat Bars', slug: 'bright-flat-bars' },
                 { name: 'Bright Hex Bars', slug: 'bright-hex-bars' },
                 { name: 'Bright Square Bars', slug: 'bright-square-bars' },
-                { name: 'Alloy Steel', slug: 'alloy-steel' }
+                { name: 'Alloy Steel', slug: 'alloy-steel' },
+                { name: 'Structural Steel', slug: 'structural-steel' }
               ].map((product) => (
                 <Button key={product.slug} variant="outline" asChild>
                   <Link href={`/products/${product.slug}`}>
@@ -334,16 +335,29 @@ export default function ResourcesPage() {
         <footer className="border-t py-12">
           <div className="container mx-auto px-4">
             <div className="grid md:grid-cols-4 gap-8">
-              <div>
-                <Image
-                  src="/shriram-steels.png"
-                  alt="Shriram Steels"
-                  width={120}
-                  height={36}
-                  className="mb-4"
-                />
+              <div className="space-y-3">
+                <div className="flex items-center gap-3">
+                  <div className="rounded-md bg-white/90 px-2 py-1 shadow-sm">
+                    <Image
+                      src="/shriram-steels.png"
+                      alt="Shriram Steels"
+                      width={120}
+                      height={36}
+                      className="h-9 w-auto"
+                    />
+                  </div>
+                  <div className="rounded-md bg-white/90 px-2 py-1 shadow-sm">
+                    <Image
+                      src="/shriram-industries.jpeg"
+                      alt="Shriram Industries"
+                      width={120}
+                      height={36}
+                      className="h-9 w-auto"
+                    />
+                  </div>
+                </div>
                 <p className="text-sm text-muted-foreground">
-                  Leading steel manufacturer in Kolhapur, Maharashtra. Quality products with competitive pricing.
+                  Shriram Steels & Shriram Industries - leading steel manufacturers in Kolhapur, Maharashtra with quality products and competitive pricing.
                 </p>
               </div>
               <div>
@@ -352,6 +366,7 @@ export default function ResourcesPage() {
                   <li><Link href="/products/black-bars">Black Bars</Link></li>
                   <li><Link href="/products/bright-round-bars">Bright Round Bars</Link></li>
                   <li><Link href="/products/alloy-steel">Alloy Steel</Link></li>
+                  <li><Link href="/products/structural-steel">Structural Steel</Link></li>
                 </ul>
               </div>
               <div>

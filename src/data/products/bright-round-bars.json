@@ -3,7 +3,7 @@
   "name": "Bright Round Bars",
   "short_description": "High-precision bright round bars ideal for shafts, rods, and machining applications.",
   "meta_description": "Premium bright round bars with exceptional surface finish. Wide range of sizes & grades. Get instant quotes from Shriram Steels.",
-  "grades": ["EN8", "EN19", "EN24", "C45", "40C8", "SS304", "SS316"],
+  "grades": ["MS", "1018", "1010", "EN1A", "EN8", "EN8D", "EN19", "EN24", "C45", "CK45", "4140", "40C8", "16MNCR5", "20MNCR5", "EN31", "SS304", "SS316"],
   "sizes": [
     "8mm dia x 3m",
     "12mm dia x 6m",

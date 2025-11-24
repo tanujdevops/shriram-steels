@@ -38,14 +38,25 @@ export function Navbar({ currentPage }: NavbarProps) {
       <div className="container mx-auto px-4 py-2 flex justify-between items-center">
         {/* Logo */}
         <Link href="/" className="flex-shrink-0">
-          <Image
-            src="/shriram-steels.png"
-            alt="Shriram Steels"
-            width={100}
-            height={30}
-            className="h-8 w-auto"
-            priority
-          />
+          <div className="flex items-center gap-2 rounded-md bg-white/90 px-2 py-1 shadow-sm">
+            <Image
+              src="/shriram-steels.png"
+              alt="Shriram Steels"
+              width={90}
+              height={26}
+              className="h-7 w-auto"
+              priority
+            />
+            <div className="h-6 w-px bg-border hidden sm:block" />
+            <Image
+              src="/shriram-industries.jpeg"
+              alt="Shriram Industries"
+              width={90}
+              height={26}
+              className="h-7 w-auto"
+              priority
+            />
+          </div>
         </Link>
 
         {/* Desktop Navigation */}
@@ -83,13 +94,23 @@ export function Navbar({ currentPage }: NavbarProps) {
             <SheetContent side="right" className="w-[300px] sm:w-[350px]">
               <SheetHeader className="border-b pb-4 mb-6">
                 <div className="flex items-center space-x-3">
-                  <Image
-                    src="/shriram-steels.png"
-                    alt="Shriram Steels"
-                    width={100}
-                    height={30}
-                    className="h-6 w-auto"
-                  />
+                  <div className="flex items-center gap-2 rounded-md bg-white/90 px-2 py-1 shadow-sm">
+                    <Image
+                      src="/shriram-steels.png"
+                      alt="Shriram Steels"
+                      width={90}
+                      height={26}
+                      className="h-6 w-auto"
+                    />
+                    <div className="h-6 w-px bg-border hidden sm:block" />
+                    <Image
+                      src="/shriram-industries.jpeg"
+                      alt="Shriram Industries"
+                      width={90}
+                      height={26}
+                      className="h-6 w-auto"
+                    />
+                  </div>
                 </div>
                 <SheetTitle className="text-left text-lg font-semibold">
                   Navigation

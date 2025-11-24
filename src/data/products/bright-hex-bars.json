@@ -3,7 +3,7 @@
   "name": "Bright Hex Bars",
   "short_description": "Premium bright hexagonal bars with precise dimensions for specialized applications.",
   "meta_description": "Precision bright hex bars in various grades. Perfect for bolts, nuts & specialized components. Contact Shriram Steels for quotes.",
-  "grades": ["EN8", "EN19", "C45", "SS304", "SS316", "Brass"],
+  "grades": ["MS", "1018", "1010", "EN1A", "EN8", "EN8D", "EN19", "C45", "CK45", "4140", "16MNCR5", "20MNCR5", "EN31", "SS304", "SS316", "Brass"],
   "sizes": [
     "12mm hex x 3m",
     "16mm hex x 6m",

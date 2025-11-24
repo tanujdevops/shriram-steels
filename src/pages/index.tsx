@@ -21,13 +21,13 @@ export default function HomePage() {
   return (
     <>
       <Head>
-        <title>Shriram Steels - Premium Steel Bars & Rods Manufacturer | Kolhapur</title>
-        <meta name="description" content="Leading manufacturer of premium steel bars, bright bars, alloy steel rods in Kolhapur. EN8, EN19, SS304, SS316 grades available. Get instant quotes via WhatsApp." />
+        <title>Shriram Steels & Shriram Industries - Premium Steel Bars & Rods | Kolhapur</title>
+        <meta name="description" content="Shriram Steels & Shriram Industries manufacture premium steel bars, bright bars, and alloy steel rods in Kolhapur. EN8, EN19, SS304, SS316 grades available. Get instant quotes via WhatsApp." />
         <meta name="keywords" content="steel bars, bright bars, alloy steel, stainless steel, EN8, EN19, SS304, Kolhapur, Maharashtra, steel manufacturer" />
         <link rel="icon" href="/favicon.ico" />
         <link rel="icon" type="image/png" sizes="32x32" href="/shriram-steels.png" />
         <link rel="apple-touch-icon" href="/shriram-steels.png" />
-        <meta property="og:title" content="Shriram Steels - Premium Steel Bars Manufacturer" />
+        <meta property="og:title" content="Shriram Steels & Shriram Industries - Premium Steel Bars Manufacturer" />
         <meta property="og:description" content="Quality steel bars, bright bars & alloy steel from Kolhapur. Multiple grades in stock. Get instant quotes." />
         <meta property="og:type" content="website" />
         <meta property="og:url" content="https://shriramsteels.com" />
@@ -37,8 +37,8 @@ export default function HomePage() {
             __html: JSON.stringify({
               "@context": "https://schema.org",
               "@type": "Organization",
-              "name": "Shriram Steels",
-              "alternateName": "Shri Ram Industries",
+              "name": "Shriram Steels & Shriram Industries",
+              "alternateName": ["Shriram Steels", "Shriram Industries", "Shri Ram Industries"],
               "url": "https://shriramsteels.com",
               "logo": "https://shriramsteels.com/shriram-steels.png",
               "description": "Leading manufacturer of premium steel bars and rods in Kolhapur",
@@ -65,14 +65,25 @@ export default function HomePage() {
         <header className="border-b">
           <div className="container mx-auto px-4 py-2 flex justify-between items-center">
             <Link href="/" className="flex items-center space-x-4">
-              <Image
-                src="/shriram-steels.png"
-                alt="Shriram Steels Logo"
-                width={120}
-                height={36}
-                className="h-8 w-auto md:h-10"
-                priority
-              />
+              <div className="flex items-center gap-2 rounded-md bg-white/90 px-2 py-1 shadow-sm">
+                <Image
+                  src="/shriram-steels.png"
+                  alt="Shriram Steels"
+                  width={110}
+                  height={32}
+                  className="h-8 w-auto md:h-10"
+                  priority
+                />
+                <div className="h-8 w-px bg-border hidden sm:block" />
+                <Image
+                  src="/shriram-industries.jpeg"
+                  alt="Shriram Industries"
+                  width={110}
+                  height={32}
+                  className="h-8 w-auto md:h-10"
+                  priority
+                />
+              </div>
             </Link>
 
             {/* Desktop Navigation */}
@@ -216,10 +227,19 @@ export default function HomePage() {
         {/* Hero Section */}
         <section className="py-20 md:py-32">
           <div className="container mx-auto px-4 text-center">
-            <Badge variant="outline" className="mb-8">
-              <Shield className="mr-2 h-3 w-3" />
-              Trusted Steel Manufacturer since decades
-            </Badge>
+            <div className="mb-12 flex flex-col items-center gap-4">
+              
+              <div className="flex flex-wrap items-center justify-center gap-3 text-sm text-muted-foreground">
+                <Badge variant="outline" className="flex items-center gap-2">
+                  <Shield className="h-3 w-3" />
+                  Shriram Steels
+                </Badge>
+                <Badge variant="outline" className="flex items-center gap-2">
+                  <Truck className="h-3 w-3" />
+                  Shriram Industries
+                </Badge>
+              </div>
+            </div>
             
             <h1 className="text-4xl md:text-6xl font-bold mb-6">
               Premium{' '}
@@ -230,7 +250,7 @@ export default function HomePage() {
             </h1>
             
             <p className="text-xl text-muted-foreground mb-8 max-w-2xl mx-auto">
-              Leading manufacturer of high-quality steel bars, bright bars, and alloy steel rods. 
+              Shriram Steels & Shriram Industries manufacture high-quality steel bars, bright bars, and alloy steel rods.
               Multiple grades in stock with Material Test Reports and competitive pricing.
             </p>
             
@@ -248,19 +268,35 @@ export default function HomePage() {
               </Button>
             </div>
 
-            {/* Hero Image */}
-            <div className="relative max-w-4xl mx-auto">
-              <Image
-                width={741}
-                height={239}
-                className="w-full h-auto object-cover object-center rounded-lg shadow-lg"
-                src="/hero.png"
-                alt="Shriram Steels Manufacturing Facility"
-                priority
-                style={{
-                  aspectRatio: '741/239'
-                }}
-              />
+            <div className="max-w-4xl mx-auto">
+              <div className="relative overflow-hidden rounded-3xl border bg-background/90 backdrop-blur px-6 py-7 shadow-xl">
+                <div className="absolute inset-0 -z-10 blur-3xl bg-gradient-to-r from-primary/25 via-amber-200/30 to-blue-300/25" />
+                <div className="flex flex-row flex-wrap items-center justify-center gap-4">
+                  <div className="rounded-2xl bg-white p-4 shadow-sm">
+                    <Image
+                      src="/shriram-steels.png"
+                      alt="Shriram Steels"
+                      width={220}
+                      height={66}
+                      className="h-14 w-auto sm:h-16"
+                      priority
+                    />
+                  </div>
+                  <div className="rounded-2xl bg-white p-4 shadow-sm">
+                    <Image
+                      src="/shriram-industries.jpeg"
+                      alt="Shriram Industries"
+                      width={220}
+                      height={66}
+                      className="h-14 w-auto sm:h-16"
+                      priority
+                    />
+                  </div>
+                </div>
+                <div className="mt-4 text-sm text-muted-foreground text-center">
+                  Manufacturing excellence from Kolhapur since 1995 — bright round bars, alloy steel bars, precision finishes.
+                </div>
+              </div>
             </div>
           </div>
         </section>
@@ -329,7 +365,8 @@ export default function HomePage() {
                 { name: 'Bright Flat Bars', desc: 'Perfect for machining and tooling', slug: 'bright-flat-bars', image: '/products/brightflatbars1.png' },
                 { name: 'Bright Hex Bars', desc: 'Ideal for fasteners and fittings', slug: 'bright-hex-bars', image: '/products/hexbars1.png' },
                 { name: 'Bright Square Bars', desc: 'Structural and decorative applications', slug: 'bright-square-bars', image: '/products/brightsquarebars1.jpeg' },
-                { name: 'Alloy Steel', desc: 'High-strength for critical components', slug: 'alloy-steel', image: '/products/alloysteel1.png' }
+                { name: 'Alloy Steel', desc: 'High-strength for critical components', slug: 'alloy-steel', image: '/products/alloysteel1.png' },
+                { name: 'Structural Steel', desc: 'Beams, channels, and angles for fabrication', slug: 'structural-steel', image: '/products/structuralsteel1.png' }
               ].map((product) => (
                 <Card key={product.slug} className="glass-card overflow-hidden">
                   <div className="relative h-48 w-full">
@@ -396,11 +433,11 @@ export default function HomePage() {
                   <div className="flex items-start space-x-3">
                     <MapPin className="h-5 w-5 text-muted-foreground mt-0.5" />
                     <div className="text-sm">
-                      <p className="font-medium">Shriram Steels</p>
-                      <p className="text-muted-foreground">
-                        Plot No. E-66, M.I.D.C., Shiroli,<br />
-                        Kolhapur - 416122, Maharashtra
-                      </p>
+                    <p className="font-medium">Shriram Steels & Shriram Industries</p>
+                    <p className="text-muted-foreground">
+                      Plot No. E-66, M.I.D.C., Shiroli,<br />
+                      Kolhapur - 416122, Maharashtra
+                    </p>
                     </div>
                   </div>
                   <div className="flex items-center space-x-3">
@@ -419,16 +456,29 @@ export default function HomePage() {
         <footer className="border-t py-12">
           <div className="container mx-auto px-4">
             <div className="grid md:grid-cols-4 gap-8">
-              <div>
-                <Image
-                  src="/shriram-steels.png"
-                  alt="Shriram Steels"
-                  width={120}
-                  height={36}
-                  className="mb-4"
-                />
+              <div className="space-y-3">
+                <div className="flex items-center gap-3">
+                  <div className="rounded-md bg-white/90 px-2 py-1 shadow-sm">
+                    <Image
+                      src="/shriram-steels.png"
+                      alt="Shriram Steels"
+                      width={120}
+                      height={36}
+                      className="h-9 w-auto"
+                    />
+                  </div>
+                  <div className="rounded-md bg-white/90 px-2 py-1 shadow-sm">
+                    <Image
+                      src="/shriram-industries.jpeg"
+                      alt="Shriram Industries"
+                      width={120}
+                      height={36}
+                      className="h-9 w-auto"
+                    />
+                  </div>
+                </div>
                 <p className="text-sm text-muted-foreground">
-                  Leading steel manufacturer in Kolhapur, Maharashtra. Quality products with competitive pricing.
+                  Shriram Steels & Shriram Industries — leading steel manufacturers in Kolhapur, Maharashtra with quality products and competitive pricing.
                 </p>
               </div>
               <div>
@@ -437,6 +487,7 @@ export default function HomePage() {
                   <li><Link href="/products/black-bars">Black Bars</Link></li>
                   <li><Link href="/products/bright-round-bars">Bright Round Bars</Link></li>
                   <li><Link href="/products/alloy-steel">Alloy Steel</Link></li>
+                  <li><Link href="/products/structural-steel">Structural Steel</Link></li>
                 </ul>
               </div>
               <div>
@@ -461,7 +512,7 @@ export default function HomePage() {
               </div>
             </div>
             <div className="border-t mt-8 pt-8 text-center text-sm text-muted-foreground">
-              <p>&copy; 2024 Shriram Steels. All rights reserved.</p>
+              <p>&copy; 2024 Shriram Steels & Shriram Industries. All rights reserved.</p>
             </div>
           </div>
         </footer>

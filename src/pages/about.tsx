@@ -20,14 +20,14 @@ import {
 const whatsappNumber = '+919623004455';
 
 export default function AboutPage() {
-  const contactMessage = encodeURIComponent('Hello! I found your website and would like to learn more about Shriram Steels. Could we discuss our steel requirements?');
+  const contactMessage = encodeURIComponent('Hello! I found your website and would like to learn more about Shriram Steels & Shriram Industries. Could we discuss our steel requirements?');
 
   return (
     <>
       <Head>
-        <title>About Shriram Steels - Steel Manufacturing Company in Kolhapur | Our Story</title>
-        <meta name="description" content="Learn about Shriram Steels, a leading steel manufacturer in Kolhapur, Maharashtra. Decades of experience in producing quality steel bars and rods for industrial applications." />
-        <meta name="keywords" content="about Shriram Steels, steel manufacturer Kolhapur, Maharashtra steel company, steel bars manufacturer, industrial steel supplier" />
+        <title>About Shriram Steels & Shriram Industries - Steel Manufacturing Company in Kolhapur | Our Story</title>
+        <meta name="description" content="Learn about Shriram Steels & Shriram Industries, established in 1995 in Kolhapur. Manufacturer and wholesaler of bright round bars, alloy steel bars, and premium steel products." />
+        <meta name="keywords" content="about Shriram Steels, Shriram Industries, steel manufacturer Kolhapur, Maharashtra steel company, steel bars manufacturer, industrial steel supplier" />
         <link rel="icon" href="/favicon.ico" />
         <link rel="icon" type="image/png" sizes="32x32" href="/shriram-steels.png" />
         <script
@@ -36,17 +36,17 @@ export default function AboutPage() {
             __html: JSON.stringify({
               "@context": "https://schema.org",
               "@type": "Organization",
-              "name": "Shriram Steels",
-              "alternateName": "Shri Ram Industries",
+              "name": "Shriram Steels & Shriram Industries",
+              "alternateName": ["Shriram Steels", "Shriram Industries", "Shri Ram Industries"],
               "url": "https://shriramsteels.com",
               "logo": "https://shriramsteels.com/shriram-steels.png",
-              "description": "Leading manufacturer of premium steel bars and rods in Kolhapur, Maharashtra",
-              "foundingDate": "1990", 
+              "description": "Manufacturer and wholesaler of bright round bars, alloy steel bars, and premium steel products from Kolhapur, Maharashtra.",
+              "foundingDate": "1995",
               "address": {
                 "@type": "PostalAddress",
                 "streetAddress": "Plot No. E-66, Shriram Industries, M.I.D.C., Shiroli",
                 "addressLocality": "Kolhapur",
-                "addressRegion": "Maharashtra", 
+                "addressRegion": "Maharashtra",
                 "postalCode": "416122",
                 "addressCountry": "IN"
               },
@@ -73,59 +73,11 @@ export default function AboutPage() {
           <div className="container mx-auto px-4">
             <div className="text-center max-w-3xl mx-auto">
               <h1 className="text-4xl md:text-5xl font-bold mb-6">
-                About Shriram Steels
+                About Shriram Steels & Shriram Industries
               </h1>
               <p className="text-xl text-muted-foreground">
-                A trusted name in steel manufacturing with decades of experience serving 
-                industries across Maharashtra and beyond.
+                Established in 1995 in Kolhapur, we unite Shriram Steels & Shriram Industries to deliver premium steel products with a client-first mindset.
               </p>
-            </div>
-          </div>
-        </section>
-
-        {/* Our Story */}
-        <section className="py-16">
-          <div className="container mx-auto px-4">
-            <div className="grid lg:grid-cols-2 gap-12 items-center">
-              <div>
-                <Badge variant="outline" className="mb-4">
-                  <Calendar className="mr-2 h-3 w-3" />
-                  Established 1990s {/* TODO: Confirm actual founding year */}
-                </Badge>
-                <h2 className="text-3xl font-bold mb-6">Our Journey</h2>
-                <div className="space-y-4 text-muted-foreground">
-                  <p>
-                    Shriram Steels has been a cornerstone of the steel manufacturing industry in Kolhapur, 
-                    Maharashtra, for decades. Located in the heart of the M.I.D.C. industrial area at 
-                    Shiroli, our facility is strategically positioned to serve customers across 
-                    Western Maharashtra and neighboring states.
-                  </p>
-                  <p>
-                    What started as a focused steel processing unit has evolved into a comprehensive 
-                    manufacturer of high-quality steel bars, bright bars, and specialized alloy steels. 
-                    Our commitment to quality, reliability, and customer satisfaction has made us a 
-                    trusted partner for industries ranging from automotive to construction.
-                  </p>
-                  <p>
-                    Today, under the leadership of our CEO Ratan P {/* TODO: Confirm CEO details */}, 
-                    we continue to expand our capabilities while maintaining the core values that 
-                    have defined our success: quality, integrity, and customer-first approach.
-                  </p>
-                </div>
-              </div>
-              
-              {/* TODO: Replace with actual facility images */}
-              <div className="space-y-4">
-                <div className="aspect-video bg-muted rounded-lg flex items-center justify-center">
-                  <div className="text-center">
-                    <Factory className="h-16 w-16 text-muted-foreground mx-auto mb-4" />
-                    <p className="text-muted-foreground">Manufacturing Facility</p>
-                    <p className="text-sm text-muted-foreground mt-1">
-                      TODO: Add facility photography
-                    </p>
-                  </div>
-                </div>
-              </div>
             </div>
           </div>
         </section>
@@ -136,7 +88,7 @@ export default function AboutPage() {
             <div className="text-center mb-12">
               <h2 className="text-3xl font-bold mb-4">Our Capabilities</h2>
               <p className="text-muted-foreground max-w-2xl mx-auto">
-                State-of-the-art manufacturing processes and quality systems that ensure 
+                State-of-the-art manufacturing processes and quality systems that ensure
                 consistent delivery of premium steel products.
               </p>
             </div>
@@ -193,6 +145,59 @@ export default function AboutPage() {
           </div>
         </section>
 
+        {/* Our Story */}
+        <section className="py-16">
+          <div className="container mx-auto px-4">
+            <div className="grid lg:grid-cols-2 gap-12 items-center">
+              <div>
+                <Badge variant="outline" className="mb-4">
+                  <Calendar className="mr-2 h-3 w-3" />
+                  Established 1995 in Kolhapur, Maharashtra
+                </Badge>
+                <h2 className="text-3xl font-bold mb-6">Our Journey</h2>
+                <div className="space-y-4 text-muted-foreground">
+                  <p>
+                    Established in the year 1995 in Kolhapur (Maharashtra, India), Shriram Industries has grown into a reputed manufacturer and wholesaler of bright round bars and alloy steel bars. Every batch is produced using quality raw material and advanced technology that aligns with industry norms.
+                  </p>
+                  <p>
+                    Our products are known for their reliable qualities - colorfastness, smooth texture, shrink and tear resistance, and a perfect finish - making them highly demanded in the market. With the help of a rich vendor base, we have emerged as an affluent supplier of bright round bars and alloy steel bars.
+                    In order to attain complete client satisfaction, we procure inputs from trusted vendors across the industry.
+                  </p>
+                  <p>
+                    To store the offered products safely, we maintain a well-furnished warehousing unit. Our advanced infrastructure covers procurement, manufacturing, quality control, R&D, sales and marketing, warehouse, and logistics - each supervised by experienced domain experts equipped with modern tools and machinery.
+                  </p>
+                  <p>
+                    Quality remains central. We run a well-equipped testing unit where the offered products are stringently checked with the latest tools. Under the mentorship of Ratan Panjwani, and with a client-oriented approach, fair practices, competitive pricing, and timely delivery, we continue to grow our base of satisfied customers.
+                  </p>
+                  <div className="rounded-lg border bg-muted/50 p-4 text-sm text-foreground">
+                    <p className="font-semibold mb-1">Address</p>
+                    <p>SHRIRAM INDUSTRIES</p>
+                    <p>E-66 MIDC SHIROLI</p>
+                    <p>KOLHAPUR 416122</p>
+                    <p className="mt-2 text-muted-foreground">GST: 27AAUPP7201Q1ZU | Phone: 9623004455</p>
+                  </div>
+                </div>
+              </div>
+
+              <div className="space-y-4">
+                <div className="relative aspect-video bg-white rounded-lg border shadow-sm overflow-hidden">
+                  <Image
+                    src="/shriram-industries.jpeg"
+                    alt="Shriram Industries logo"
+                    fill
+                    className="object-contain p-6"
+                    sizes="(min-width: 1024px) 480px, 100vw"
+                    priority
+                  />
+                </div>
+                <p className="text-center text-muted-foreground text-sm">
+                  Shriram Industries - trusted manufacturing partner since 1995
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+
         {/* Leadership */}
         <section className="py-16">
           <div className="container mx-auto px-4">
@@ -210,16 +215,13 @@ export default function AboutPage() {
                   <div className="w-24 h-24 bg-muted rounded-full mx-auto mb-4 flex items-center justify-center">
                     <Users className="h-12 w-12 text-muted-foreground" />
                   </div>
-                  <CardTitle>Ratan P</CardTitle>
-                  <CardDescription>Chief Executive Officer</CardDescription>
+                  <CardTitle>Ratan Panjwani</CardTitle>
+                  <CardDescription>Mentor & Leadership</CardDescription>
                 </CardHeader>
                 <CardContent>
                   <p className="text-sm text-muted-foreground">
-                    Leading Shriram Steels with vision and expertise, driving growth 
-                    and maintaining our reputation for quality in the steel industry.
-                  </p>
-                  <p className="text-xs text-muted-foreground mt-2">
-                    {/* TODO: Confirm CEO details and background */}
+                    Guiding Shriram Steels & Shriram Industries with vision and expertise, driving growth
+                    while maintaining our reputation for quality in the steel industry.
                   </p>
                 </CardContent>
               </Card>
@@ -244,7 +246,7 @@ export default function AboutPage() {
                 </CardHeader>
                 <CardContent className="space-y-3">
                   <div>
-                    <h4 className="font-semibold">Shriram Steels</h4>
+                    <h4 className="font-semibold">Shriram Steels & Shriram Industries</h4>
                     <p className="text-muted-foreground text-sm">
                       Plot No. E-66, Shriram Industries<br />
                       M.I.D.C., Shiroli<br />
@@ -252,12 +254,8 @@ export default function AboutPage() {
                       Maharashtra, India
                     </p>
                   </div>
-                  <div className="pt-2">
-                    <p className="text-xs text-muted-foreground">
-                      <strong>GST Number:</strong> 27AAUPP7201Q1ZU
-                      <br />
-                      <span className="text-red-500">TODO: Verify GST number</span>
-                    </p>
+                  <div className="pt-2 text-xs text-muted-foreground">
+                    <strong>GST Number:</strong> 27AAUPP7201Q1ZU
                   </div>
                 </CardContent>
               </Card>
@@ -274,15 +272,13 @@ export default function AboutPage() {
                     <h4 className="font-semibold text-sm">Primary Contact</h4>
                     <p className="text-muted-foreground text-sm">
                       WhatsApp: +91 96230 04455<br />
-                      Phone: +91-XXXXXXXXXX {/* TODO: Add landline if available */}
+                      Phone: 9623004455
                     </p>
                   </div>
                   <div>
                     <h4 className="font-semibold text-sm">Email</h4>
                     <p className="text-muted-foreground text-sm">
                       sales@shriramsteels.example
-                      <br />
-                      <span className="text-xs text-red-500">TODO: Update with actual email</span>
                     </p>
                   </div>
                   <Button asChild className="w-full mt-4">
@@ -302,7 +298,7 @@ export default function AboutPage() {
           <div className="container mx-auto px-4 text-center">
             <h2 className="text-3xl font-bold mb-4">Ready to Work Together?</h2>
             <p className="text-muted-foreground mb-8 max-w-2xl mx-auto">
-              Whether you need standard steel products or custom specifications, 
+              Whether you need standard steel products or custom specifications,
               our team is ready to help. Contact us to discuss your requirements.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
@@ -325,16 +321,29 @@ export default function AboutPage() {
         <footer className="border-t py-12">
           <div className="container mx-auto px-4">
             <div className="grid md:grid-cols-4 gap-8">
-              <div>
-                <Image
-                  src="/shriram-steels.png"
-                  alt="Shriram Steels"
-                  width={120}
-                  height={36}
-                  className="mb-4"
-                />
+              <div className="space-y-3">
+                <div className="flex items-center gap-3">
+                  <div className="rounded-md bg-white/90 px-2 py-1 shadow-sm">
+                    <Image
+                      src="/shriram-steels.png"
+                      alt="Shriram Steels"
+                      width={120}
+                      height={36}
+                      className="h-9 w-auto"
+                    />
+                  </div>
+                  <div className="rounded-md bg-white/90 px-2 py-1 shadow-sm">
+                    <Image
+                      src="/shriram-industries.jpeg"
+                      alt="Shriram Industries"
+                      width={120}
+                      height={36}
+                      className="h-9 w-auto"
+                    />
+                  </div>
+                </div>
                 <p className="text-sm text-muted-foreground">
-                  Leading steel manufacturer in Kolhapur, Maharashtra. Quality products with competitive pricing.
+                  Shriram Steels & Shriram Industries - leading steel manufacturers in Kolhapur, Maharashtra with quality products and competitive pricing.
                 </p>
               </div>
               <div>
@@ -343,6 +352,7 @@ export default function AboutPage() {
                   <li><Link href="/products/black-bars">Black Bars</Link></li>
                   <li><Link href="/products/bright-round-bars">Bright Round Bars</Link></li>
                   <li><Link href="/products/alloy-steel">Alloy Steel</Link></li>
+                  <li><Link href="/products/structural-steel">Structural Steel</Link></li>
                 </ul>
               </div>
               <div>
@@ -364,7 +374,7 @@ export default function AboutPage() {
               </div>
             </div>
             <div className="border-t mt-8 pt-8 text-center text-sm text-muted-foreground">
-              <p>&copy; 2024 Shriram Steels. All rights reserved.</p>
+              <p>&copy; 2024 Shriram Steels & Shriram Industries. All rights reserved.</p>
             </div>
           </div>
         </footer>

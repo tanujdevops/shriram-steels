@@ -3,7 +3,7 @@
   "name": "Black Bars",
   "short_description": "High-quality black steel bars suitable for construction and machining applications.",
   "meta_description": "Premium black steel bars for construction & machining. Various grades & sizes available. Request quote from Shriram Steels today.",
-  "grades": ["EN8", "EN19", "EN24", "C45", "40C8", "EN31"],
+  "grades": ["MS", "1018", "1010", "4140", "EN1A", "EN8", "EN8D", "EN19", "EN24", "C45", "CK45", "40C8", "16MNCR5", "20MNCR5", "EN31"],
   "sizes": [
     "16mm x 3m",
     "20mm x 6m", 
@@ -28,7 +28,7 @@
     "Automotive parts"
   ],
   "spec_pdf": "/specs/black-bars-specs.pdf",
-  "images": ["/products/blackbars1.png", "/products/blackbars2.png", "/products/blackbars3.png", "/products/blackbars4.png"],
+  "images": ["/products/blackbars1.png", "/products/blackbars2.png", "/products/blackbars3.png"],
   "availability": "In Stock",
   "min_order_qty": "1 MT",
   "price": "Request Quote"

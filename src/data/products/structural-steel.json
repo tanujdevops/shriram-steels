@@ -1,0 +1,35 @@
+{
+  "slug": "structural-steel",
+  "name": "Structural Steel",
+  "short_description": "Hot rolled structural sections including beams, channels, and angles for load-bearing fabrication.",
+  "meta_description": "Structural steel beams, channels, and angles per IS 2062 / EN 10025. Shot blasted, primed options with MTC. Get quotes from Shriram Steels.",
+  "grades": ["IS 2062 E250", "IS 2062 E300", "IS 2062 E350", "ASTM A36", "S235JR", "S355JR"],
+  "sizes": [
+    "ISMB 200 x 100 x 10 mm x 6m",
+    "ISMC 150 x 75 x 5 mm x 6m",
+    "Equal Angle 65 x 65 x 6 mm x 6m"
+  ],
+  "features": [
+    "High load-bearing capacity with consistent straightness",
+    "Shot blasted and primed options for faster fabrication",
+    "Ultrasonic tested heats with traceable mill certificates",
+    "Tight dimensional tolerances for reliable assembly"
+  ],
+  "specifications": {
+    "material": "Structural Steel (IS 2062 / EN 10025)",
+    "surface": "Hot Rolled / Shot Blasted & Primed",
+    "tolerance": "As per IS 1852 / ASTM A6",
+    "certification": "Material Test Reports with heat numbers"
+  },
+  "applications": [
+    "Industrial sheds and building frameworks",
+    "Bridges, walkways, and platforms",
+    "Cranes, gantries, and material handling structures",
+    "Machine base frames and fabrication projects"
+  ],
+  "spec_pdf": "/specs/structural-steel-specs.pdf",
+  "images": ["/products/structuralsteel1.png", "/products/structuralsteel2.png"],
+  "availability": "In Stock",
+  "min_order_qty": "1 MT",
+  "price": "Request Quote"
+}

@@ -45,8 +45,8 @@ export default function ProductsPage({ products, allGrades }: ProductsPageProps)
     <>
       <Head>
         <title>Steel Products - Bars, Rods & Alloy Steel | Shriram Steels Kolhapur</title>
-        <meta name="description" content="Browse our complete range of steel products: black bars, bright bars, alloy steel rods. EN8, EN19, SS304, SS316 grades in stock. Get instant quotes." />
-        <meta name="keywords" content="steel products, black bars, bright bars, alloy steel, EN8, EN19, SS304, SS316, steel rods, Kolhapur" />
+        <meta name="description" content="Browse our complete range of steel products: black bars, bright bars, alloy steel rods, and structural steel sections. EN8, EN19, SS304, SS316, IS 2062 grades in stock. Get instant quotes." />
+        <meta name="keywords" content="steel products, black bars, bright bars, alloy steel, structural steel, EN8, EN19, SS304, SS316, IS 2062, steel rods, Kolhapur" />
         <link rel="icon" href="/favicon.ico" />
         <link rel="icon" type="image/png" sizes="32x32" href="/shriram-steels.png" />
       </Head>
@@ -224,16 +224,29 @@ export default function ProductsPage({ products, allGrades }: ProductsPageProps)
         <footer className="border-t py-12">
           <div className="container mx-auto px-4">
             <div className="grid md:grid-cols-4 gap-8">
-              <div>
-                <Image
-                  src="/shriram-steels.png"
-                  alt="Shriram Steels"
-                  width={120}
-                  height={36}
-                  className="mb-4"
-                />
+              <div className="space-y-3">
+                <div className="flex items-center gap-3">
+                  <div className="rounded-md bg-white/90 px-2 py-1 shadow-sm">
+                    <Image
+                      src="/shriram-steels.png"
+                      alt="Shriram Steels"
+                      width={120}
+                      height={36}
+                      className="h-9 w-auto"
+                    />
+                  </div>
+                  <div className="rounded-md bg-white/90 px-2 py-1 shadow-sm">
+                    <Image
+                      src="/shriram-industries.jpeg"
+                      alt="Shriram Industries"
+                      width={120}
+                      height={36}
+                      className="h-9 w-auto"
+                    />
+                  </div>
+                </div>
                 <p className="text-sm text-muted-foreground">
-                  Leading steel manufacturer in Kolhapur, Maharashtra. Quality products with competitive pricing.
+                  Shriram Steels & Shriram Industries - leading steel manufacturers in Kolhapur, Maharashtra with quality products and competitive pricing.
                 </p>
               </div>
               <div>
@@ -242,6 +255,7 @@ export default function ProductsPage({ products, allGrades }: ProductsPageProps)
                   <li><Link href="/products/black-bars">Black Bars</Link></li>
                   <li><Link href="/products/bright-round-bars">Bright Round Bars</Link></li>
                   <li><Link href="/products/alloy-steel">Alloy Steel</Link></li>
+                  <li><Link href="/products/structural-steel">Structural Steel</Link></li>
                 </ul>
               </div>
               <div>
@@ -280,6 +294,7 @@ export const getStaticProps: GetStaticProps = async () => {
   const brightRoundBars = require('../../data/products/bright-round-bars.json');
   const brightSquareBars = require('../../data/products/bright-square-bars.json');
   const alloySteel = require('../../data/products/alloy-steel.json');
+  const structuralSteel = require('../../data/products/structural-steel.json');
 
   const products = [
     blackBars,
@@ -287,7 +302,8 @@ export const getStaticProps: GetStaticProps = async () => {
     brightHexBars,
     brightRoundBars,
     brightSquareBars,
-    alloySteel
+    alloySteel,
+    structuralSteel
   ];
 
   // Extract all unique grades for filtering
