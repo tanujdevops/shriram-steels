@@ -269,6 +269,11 @@ export default function ProductsPage({ products, allGrades }: ProductsPageProps)
               <div>
                 <h4 className="font-semibold mb-4">Contact</h4>
                 <div className="space-y-2 text-sm text-muted-foreground">
+                  <p className="font-semibold">Shriram Steels</p>
+                  <p>D-42, Shriram Steels</p>
+                  <p>Pune Bangalore Highway, Shiroli MIDC</p>
+                  <p>Kolhapur - 416122, Maharashtra</p>
+                  <p className="font-semibold pt-2">Shriram Industries</p>
                   <p>Plot No. E-66, M.I.D.C., Shiroli</p>
                   <p>Kolhapur - 416122, Maharashtra</p>
                   <p>WhatsApp: +91 96230 04455</p>

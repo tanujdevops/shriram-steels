@@ -143,7 +143,7 @@ const productQuoteMessage = (productName) => encodeURIComponent(`Hello! I would 
 - [ ] **Verify Business Details**: 
   - GST Number: 27AAUPP7201Q1ZU
   - CEO Name: Ratan P  
-  - Contact Email: Update placeholder sales@shriramsteels.example
+  - Contact Email: Update placeholder shriramindustrieskolhapur@yahoo.com
 
 ### Medium Priority
 - [ ] **Quality Certifications**: Verify ISO or other quality certifications
@@ -180,7 +180,9 @@ Background: White (#FFFFFF)
 
 **Company**: Shriram Steels  
 **Public Name**: Shri Ram Industries (as per reference site)  
-**Address**: Plot No. E-66, Shriram Industries, M.I.D.C., Shiroli, Kolhapur - 416122, Maharashtra, India  
+**Addresses**:  
+- Shriram Steels: D-42, Shriram Steels, Pune Bangalore Highway, Shiroli MIDC, Kolhapur - 416122, Maharashtra, India  
+- Shriram Industries: Plot No. E-66, M.I.D.C., Shiroli, Kolhapur - 416122, Maharashtra, India  
 **Primary Contact**: +91 96230 04455 (WhatsApp)  
 **Reference Website**: https://www.shriramindustries9.com/  
 **GST**: 27AAUPP7201Q1ZU *(TODO: Verify)*  

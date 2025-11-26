@@ -161,14 +161,24 @@ Please share your current rates and availability. Thank you!`;
                 "@type": "Organization",
                 "name": "Shriram Steels & Shriram Industries",
                 "alternateName": ["Shriram Steels", "Shriram Industries"],
-                "address": {
-                  "@type": "PostalAddress",
-                  "streetAddress": "Plot No. E-66, Shriram Industries, M.I.D.C., Shiroli",
-                  "addressLocality": "Kolhapur",
-                  "addressRegion": "Maharashtra",
-                  "postalCode": "416122",
-                  "addressCountry": "IN"
-                }
+                "address": [
+                  {
+                    "@type": "PostalAddress",
+                    "streetAddress": "D-42, Shriram Steels, Pune Bangalore Highway, Shiroli MIDC",
+                    "addressLocality": "Shiroli MIDC",
+                    "addressRegion": "Maharashtra",
+                    "postalCode": "416122",
+                    "addressCountry": "IN"
+                  },
+                  {
+                    "@type": "PostalAddress",
+                    "streetAddress": "Plot No. E-66, M.I.D.C., Shiroli",
+                    "addressLocality": "Kolhapur",
+                    "addressRegion": "Maharashtra",
+                    "postalCode": "416122",
+                    "addressCountry": "IN"
+                  }
+                ]
               },
               "offers": {
                 "@type": "Offer",
@@ -627,6 +637,11 @@ Please share your current rates and availability. Thank you!`;
               <div>
                 <h4 className="font-semibold mb-4">Contact</h4>
                 <div className="space-y-2 text-sm text-muted-foreground">
+                  <p className="font-semibold">Shriram Steels</p>
+                  <p>D-42, Shriram Steels</p>
+                  <p>Pune Bangalore Highway, Shiroli MIDC</p>
+                  <p>Kolhapur - 416122, Maharashtra</p>
+                  <p className="font-semibold pt-2">Shriram Industries</p>
                   <p>Plot No. E-66, M.I.D.C., Shiroli</p>
                   <p>Kolhapur - 416122, Maharashtra</p>
                   <p>WhatsApp: +91 96230 04455</p>

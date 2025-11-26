@@ -42,14 +42,24 @@ export default function AboutPage() {
               "logo": "https://shriramsteels.com/shriram-steels.png",
               "description": "Manufacturer and wholesaler of bright round bars, alloy steel bars, and premium steel products from Kolhapur, Maharashtra.",
               "foundingDate": "1995",
-              "address": {
-                "@type": "PostalAddress",
-                "streetAddress": "Plot No. E-66, Shriram Industries, M.I.D.C., Shiroli",
-                "addressLocality": "Kolhapur",
-                "addressRegion": "Maharashtra",
-                "postalCode": "416122",
-                "addressCountry": "IN"
-              },
+              "address": [
+                {
+                  "@type": "PostalAddress",
+                  "streetAddress": "D-42, Shriram Steels, Pune Bangalore Highway, Shiroli MIDC",
+                  "addressLocality": "Shiroli MIDC",
+                  "addressRegion": "Maharashtra",
+                  "postalCode": "416122",
+                  "addressCountry": "IN"
+                },
+                {
+                  "@type": "PostalAddress",
+                  "streetAddress": "Plot No. E-66, M.I.D.C., Shiroli",
+                  "addressLocality": "Kolhapur",
+                  "addressRegion": "Maharashtra",
+                  "postalCode": "416122",
+                  "addressCountry": "IN"
+                }
+              ],
               "contactPoint": {
                 "@type": "ContactPoint",
                 "telephone": "+919623004455",
@@ -246,10 +256,16 @@ export default function AboutPage() {
                 </CardHeader>
                 <CardContent className="space-y-3">
                   <div>
-                    <h4 className="font-semibold">Shriram Steels & Shriram Industries</h4>
+                    <h4 className="font-semibold">Shriram Steels</h4>
                     <p className="text-muted-foreground text-sm">
-                      Plot No. E-66, Shriram Industries<br />
-                      M.I.D.C., Shiroli<br />
+                      D-42, Shriram Steels<br />
+                      Pune Bangalore Highway, Shiroli MIDC<br />
+                      Kolhapur - 416122<br />
+                      Maharashtra, India
+                    </p>
+                    <h4 className="font-semibold pt-2">Shriram Industries</h4>
+                    <p className="text-muted-foreground text-sm">
+                      Plot No. E-66, M.I.D.C., Shiroli<br />
                       Kolhapur - 416122<br />
                       Maharashtra, India
                     </p>
@@ -278,7 +294,7 @@ export default function AboutPage() {
                   <div>
                     <h4 className="font-semibold text-sm">Email</h4>
                     <p className="text-muted-foreground text-sm">
-                      sales@shriramsteels.example
+                      shriramindustrieskolhapur@yahoo.com
                     </p>
                   </div>
                   <Button asChild className="w-full mt-4">
@@ -366,6 +382,11 @@ export default function AboutPage() {
               <div>
                 <h4 className="font-semibold mb-4">Contact</h4>
                 <div className="space-y-2 text-sm text-muted-foreground">
+                  <p className="font-semibold">Shriram Steels</p>
+                  <p>D-42, Shriram Steels</p>
+                  <p>Pune Bangalore Highway, Shiroli MIDC</p>
+                  <p>Kolhapur - 416122, Maharashtra</p>
+                  <p className="font-semibold pt-2">Shriram Industries</p>
                   <p>Plot No. E-66, M.I.D.C., Shiroli</p>
                   <p>Kolhapur - 416122, Maharashtra</p>
                   <p>WhatsApp: +91 96230 04455</p>
